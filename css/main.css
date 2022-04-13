@@ -9,49 +9,26 @@ body {
 
 /* encabezado */
 .encabezado {
-    display: inline-flex;
-    width: 100%;
-    background: black;
-}
-.encabezado .encabezado__logo {
-    height: 50px;
-    background: black;
-}
-.encabezado .encabezado__texto {
-    font-size: 30px;
-    font-weight: 800;
-    width: 100%;
-    margin-left: 4px;
-    background: black;
-    font-family: 'Faustina', serif;
-    color: white;
-    align-self: center;
+    padding: 0px;
 }
 .menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    list-style: none;
     width: 100%;
-    padding: 10px 0;
     background: #b3ae08d0;
-}
-li {
-    width: 100%;
+    padding: 0px;
+    justify-content: space-around;
 }
 .menu .menu__navegacion {
     text-decoration: none;
     color: black;
     border: groove antiquewhite 7px;
-    font-size: 35px;
     font-family: 'Faustina', serif;
-    background: rgb(226,190,40);
-    background: linear-gradient(180deg, rgba(226,190,40,1) 25%, rgba(222,188,17,1) 50%, rgba(205,178,16,1) 100%);    width: 100%;
-    padding: 7px 15px;
+    background: linear-gradient(180deg, rgba(226,190,40,1) 25%, rgba(222,188,17,1) 50%, rgba(205,178,16,1) 100%); width: 100%;
+    font-size: 25px;
 }
 .menu .menu__navegacion:hover {
-    background: black;
-    color: white;
-    border: groove white 7px;
+    background: white;
+    border: groove #999 7px;
+
 }
 
 /* footer */
@@ -83,8 +60,8 @@ li {
     width: 400px;
 }
 .article .article__texto {
-    width: 400px;
-    font-size: 35px;
+    width: 375px;
+    font-size: 32px;
     font-family: 'Faustina', serif;
     text-align: center;
 }
@@ -94,11 +71,6 @@ li {
     font-family: 'Faustina', serif;
     margin-top: 20px;
 }
-.section {
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
-    margin: 0 125px;
-}
 .section__title {
     margin-top: 75px;
     margin-bottom: 30px;
@@ -106,21 +78,22 @@ li {
     font-size: 25px;
     font-family: 'Faustina', serif;
 }
-.section .section__texto {
-    border: groove 5px black;
-    text-align: center;
-    font-size: 21px;
-    font-family: 'Faustina', serif;
-    width: 100%;
-    background: white;
+.carousel-control-prev {
+    width: 50%;
 }
-.section .section__imagen {
-    border: groove 5px black;
-    width: 100%;
-    height: 300px;
-    background: white;
+.carousel-control-next {
+    width: 50%;
 }
-
+.section {
+    display: block;
+    width: 700px;
+    height: 700px;
+    margin: 0 auto;
+}
+.carousel-item {
+    height: 700px;
+    width: 700px;
+}
 /* quienes somos */
 .quienessomos {
     display: grid;
@@ -297,24 +270,9 @@ li {
 /* tablet */
 @media (min-width: 481px) and (max-width: 768px) {
 /* encabezado */
-.encabezado .encabezado__logo {
-    height: 25px;
-}
-.encabezado .encabezado__texto {
+.menu .menu__navegacion {
     font-size: 17px;
 }
-.menu {
-    padding: 7px 0;
-}
-.menu .menu__navegacion {
-    border: groove antiquewhite 5px;
-    font-size: 20px;
-    padding: 5px 10px;
-}
-.menu .menu__navegacion:hover {
-    border: groove white 5px;
-}
-
 /* footer */
 .footer {
     margin: 25px 12px 12px 12px;
@@ -342,27 +300,25 @@ li {
 .article__titulo {
     font-size: 35px;
 }
-.section {
-    margin: 0 75px;
-}
 .section__title {
     margin-top: 45px;
     margin-bottom: 25px;
     margin-left: 15px;
     font-size: 22px;
 }
-.section .section__texto {
-    border: groove 4px black;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    font-size: 15px;
-    font-family: 'Faustina', serif;
+.carousel-control-prev {
+    width: 20%;
 }
-.section .section__imagen {
-    border: groove 4px black;
-    width: 100%;
-    height: 150px;
+.carousel-control-next {
+    width: 20%;
+}
+.section {
+    width: 450px;
+    height: 450px;
+}
+.carousel-item {
+    height: 450px;
+    width: 450px;
 }
 
 /* quienes somos */
@@ -482,24 +438,9 @@ li {
 /* celular */
 @media screen and (max-width: 480px) {
 /* encabezado */
-.encabezado .encabezado__logo {
-    height: 25px;
-}
-.encabezado .encabezado__texto {
-    font-size: 15px;
-}
-.menu {
-    padding: 3px 0;
-}
 .menu .menu__navegacion {
-    border: groove antiquewhite 2px;
-    font-size: 14px;
-    padding: 2px 4px;
+    font-size: 13px;
 }
-.menu .menu__navegacion:hover {
-    border: groove white 2px;
-}
-
 /* footer */
 .footer {
     margin: 25px 10px 10px 10px;
@@ -531,25 +472,26 @@ li {
     font-size: 30px;
     margin-top: 20px;
 }
-.section {
-    margin: 0 40px;
-}
 .section__title {
     margin-top: 30px;
     margin-bottom: 20px;
     margin-left: 10px;
     font-size: 19px;
 }
-.section .section__texto {
-    border: groove 3px black;
-    font-size: 11px;
+.carousel-control-prev {
+    width: 10%;
 }
-.section .section__imagen {
-    border: groove 3px black;
-    width: 100%;
-    height: 125px;
+.carousel-control-next {
+    width: 10%;
 }
-
+.section {
+    width: 300px;
+    height: 300px;
+}
+.carousel-item {
+    height: 300px;
+    width: 300px;
+}
 /* quienes somos */
 .quienessomos {
     display: block;
