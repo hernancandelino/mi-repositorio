@@ -67,16 +67,16 @@ body {
 }
 .article__titulo {
     text-align: center;
-    font-size: 35px;
     font-family: 'Faustina', serif;
-    margin-top: 20px;
+    font-size: 45px;
+    font-weight: 800;
+    margin: 30px;
 }
 .section__title {
-    margin-top: 75px;
-    margin-bottom: 30px;
-    margin-left: 20px;
-    font-size: 25px;
     font-family: 'Faustina', serif;
+    font-size: 35px;
+    margin: 30px;
+    font-weight: 800;
 }
 .carousel-control-prev {
     width: 50%;
@@ -103,7 +103,8 @@ body {
 .quienessomos__titulo {
     font-family: 'Faustina', serif;
     font-size: 45px;
-    margin: 15px;
+    margin: 30px;
+    font-weight: 800;
 }
 .quienessomos .quienessomos__imagen {
     display: block;
@@ -123,13 +124,23 @@ body {
 .valores {
     font-family: 'Faustina', serif;
     font-size: 20px;
-    margin: 10px;
+    width: 15%;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+    font-weight: 800;
+    display: inline-block;
+    background: #deb887d8;
+    justify-self: center;
+}
+.valores-div {
+    display: flex;
+    justify-content: center;
 }
 .valores__titulo {
     font-family: 'Faustina', serif;
-    font-size: 30px;
-    margin: 20px;
-}
+    font-size: 35px;
+    margin: 30px;
+    font-weight: 800;}
 .contacto {
     text-decoration: none;
     color: black;
@@ -137,12 +148,16 @@ body {
     margin: 20px;
     font-size: 20px;
 }
+.contacto:hover {
+    color: white;
+}
 
 /* productos */
 .nuestrosproductos {
     font-family: 'Faustina', serif;
     font-size: 45px;
     margin: 30px;
+    font-weight: 800;
 }
 .col {
     padding: 0%;
@@ -180,11 +195,13 @@ body {
     font-family: 'Faustina', serif;
     font-size: 45px;
     margin: 30px;
+    font-weight: 800;
 }
 .envios__zona {
     font-family: 'Faustina', serif;
-    font-size: 25px;
-    margin: 5px;
+    font-size: 30px;
+    margin: 15px;
+    font-weight: 700;
 }
 .envios__iframe {
     border: solid 5px black;
@@ -203,12 +220,13 @@ body {
 .contacto__titulo {
     font-family: 'Faustina', serif;
     font-size: 45px;
-    margin: 15px;
+    margin: 30px;
+    font-weight: 800;
 }
 .formulario__input {
     display: block;
     font-family: 'Faustina', serif;
-    margin: 7px;
+    margin: 5px;
     width: 30%;
     background: #deb887d8;
     font-size: 20px;
@@ -219,7 +237,7 @@ body {
 }
 .formulario__label {
     font-family: 'Faustina', serif;
-    margin: 10px;
+    margin: 5px;
     font-size: 20px;
 }
 .formulario__legend {
@@ -239,10 +257,16 @@ body {
     color: white;
     border: groove 5px white;
 }
+.formulario__boton:hover {
+    background-color: #deb887d8;
+    color: black;
+    border: groove 5px #deb887d8;
+}
 .ubicacion__titulo {
     font-family: 'Faustina', serif;
-    font-size: 30px;
-    margin: 15px;
+    font-size: 35px;
+    margin: 30px;
+    font-weight: 800;
 }
 .ubicacion__direccion {
     display: block;
@@ -254,8 +278,9 @@ body {
 }
 .medios__titulo {
     font-family: 'Faustina', serif;
-    font-size: 30px;
-    margin: 15px;
+    font-size: 35px;
+    margin: 30px;
+    font-weight: 800;
 }
 .medios__redes {
     font-family: 'Faustina', serif;
@@ -348,7 +373,7 @@ body {
     margin: 15px auto;
 }
 .valores {
-    font-size: 17px;
+    font-size: 15px;
     margin: 7px;
 }
 .valores__titulo {

@@ -22,14 +22,14 @@
 <body>
 
 <header>
-  <nav class="encabezado navbar navbar-dark bg-dark">
+  <div class="encabezado navbar navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="../index.html">
         <img src="../img/img-logo.jpg" alt="img-logo" width="40" height="33" class="d-inline-block align-text-top">
         Mueblería San Sossio
       </a>
     </div>
-  </nav>
+  </div>
   <nav class="menu navbar navbar-expand-lg navbar-light bg-light">
     <div class="menu container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,10 +38,10 @@
       <div class="menu collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="menu__navegacion nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            <a class="menu__navegacion nav-link" aria-current="page" href="../index.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="menu__navegacion nav-link" href="../secciones/quienes-somos.html">Nosotros</a>
+            <a class="menu__navegacion nav-link active" href="../secciones/quienes-somos.html">Nosotros</a>
           </li>
           <li class="nav-item">
             <a class="menu__navegacion nav-link" href="../secciones/productos.html">Productos</a>
@@ -59,8 +59,8 @@
 </header>
 
 <article>
-    <div class="quienessomos__titulo animate__animated animate__flipInX">
-        <h2>Sobre nosotros</h2>
+    <div class="animate__animated animate__flipInX">
+        <h2 class="quienessomos__titulo">Sobre nosotros</h2>
     </div>
     <div class="quienessomos animate__animated animate__jackInTheBox">
         <div>
@@ -80,14 +80,14 @@
 </article>
 
 <section>
-    <div class="valores__titulo">
-        <h3>Nuestros valores</h3>
-    </div>
     <div>
-        <h5 class="valores">Esfuerzo y compromiso</h5> 
-        <h5 class="valores">Mejora continua</h5>
-        <h5 class="valores">Excelencia de ejecución</h5>
-        <h5 class="valores">Alegría y diversión</h5>
+        <h3 class="valores__titulo">Nuestros valores</h3>
+    </div>
+    <div class="valores-div">
+      <h5 class=" valores shadow p-3 mb-5 bg-body rounded">Esfuerzo y compromiso</h5>
+      <h5 class="valores shadow p-3 mb-5 bg-body rounded">Mejora continua</h5>
+      <h5 class="valores shadow p-3 mb-5 bg-body rounded">Excelencia de ejecución</h5>
+      <h5 class="valores shadow p-3 mb-5 bg-body rounded">Alegría y diversión</h5>
     </div>
 </section>
 
@@ -96,21 +96,18 @@
 </div>
 
 <footer class="footer">
-    <div class="footer__div">
-      <img src="../img/img-logo-instagram.jpg" alt="instagram" height="20" width="20">
-      <a class="footer__redes" href="https://www.instagram.com/muebleria.sansossio/" target="_blank"> @muebleria.sansossio</a>
-    </div>
-    <div class="footer__div">
-      <img src="../img/img-logo-wpp.jpg" alt="wpp" height="20" width="20"> 
-      <a class="footer__redes" href="https://wa.link/blljap" target="_blank">1124792455</a>
-    </div>
-    <div class="footer__div">
-      <img src="../img/img-logo-maps.png" alt="direccion" height="20" width="20">
-      <a class="footer__redes" href="https://goo.gl/maps/d7MNxX37tdLNaNLy9" target="_blank"> Domingo Millán, La Matanza</a>
-    </div>
-  </footer>
+  <div class="footer__div">
+    <a class="footer__redes" href="https://www.instagram.com/muebleria.sansossio/" target="_blank"><img  src="../img/img-logo-instagram.jpg" alt="instagram" height="20" width="20">@muebleria.sansossio</a>
+  </div>
+  <div class="footer__div">
+    <a class="footer__redes" href="https://wa.link/blljap" target="_blank"><img src="../img/img-logo-wpp.jpg" alt="wpp" height="20" width="20">1124792455</a>
+  </div>
+  <div class="footer__div">
+    <a class="footer__redes" href="https://goo.gl/maps/d7MNxX37tdLNaNLy9" target="_blank"><img src="../img/img-logo-maps.png" alt="direccion" height="20" width="20">Domingo Millán, La Matanza</a>
+  </div>
+</footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 </html>
