@@ -10,10 +10,11 @@ body {
 /* encabezado */
 .encabezado {
     padding: 0px;
+    font-family: 'Faustina', serif;
 }
 .menu {
     width: 100%;
-    background: #b3ae08d0;
+    background: #b3ad08ee;
     padding: 0px;
     justify-content: space-around;
 }
@@ -28,7 +29,6 @@ body {
 .menu .menu__navegacion:hover {
     background: white;
     border: groove #999 7px;
-
 }
 
 /* footer */
@@ -144,31 +144,35 @@ body {
     font-size: 45px;
     margin: 30px;
 }
-.percheros {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0 250px;
+.col {
+    padding: 0%;
+    margin: 15px auto;
+    width: 35%;
 }
-.percheros__titulo {
-    margin-top: 75px;
-    margin-bottom: 30px;
-    margin-left: 20px;
-    font-size: 25px;
+.card {
+    background: #deb887d8;
+    border: groove 3px #999;
+    border-radius: 25px;
+}
+.card-title {
     font-family: 'Faustina', serif;
-}
-.percheros .percheros__texto {
-    border: groove 5px black;
+    font-size: 22px;
     text-align: center;
-    font-size: 21px;
-    font-family: 'Faustina', serif;
-    width: 100%;
-    background: white;
+    font-weight: 700;
 }
-.percheros .percheros__imagen {
-    border: groove 5px black;
-    width: 100%;
-    height: 500px;
-    background: white;
+.card-img-top {
+    width: 90%;
+    height: 90%;
+    align-self: center;
+    padding: 15px 10px;
+}
+.ratona {
+    width: 90%;
+    height: 70%;
+}
+.perchero {
+    width: 80%;
+    height: 90%;
 }
 
 /* envios */
@@ -186,8 +190,8 @@ body {
     border: solid 5px black;
     display: block;
     margin: 25px auto;
-    width: 600px;
-    height: 500px;
+    width: 700px;
+    height: 600px;
 }
 .envios__precio {
     font-family: 'Faustina', serif;
@@ -271,7 +275,12 @@ body {
 @media (min-width: 481px) and (max-width: 768px) {
 /* encabezado */
 .menu .menu__navegacion {
-    font-size: 17px;
+    padding: 10px;
+    border: groove antiquewhite 5px;
+    font-size: 15px;
+}
+.menu .menu__navegacion:hover {
+    border: groove #999 5px;
 }
 /* footer */
 .footer {
@@ -389,8 +398,8 @@ body {
 .envios__iframe {
     border: solid 4px black;
     margin: 20px auto;
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
 }
 .envios__precio {
     font-size: 17px;
@@ -439,7 +448,12 @@ body {
 @media screen and (max-width: 480px) {
 /* encabezado */
 .menu .menu__navegacion {
-    font-size: 13px;
+    padding: 7px;
+    border: groove antiquewhite 3px;
+    font-size: 12px;
+}
+.menu .menu__navegacion:hover {
+    border: groove #999 3px;
 }
 /* footer */
 .footer {
@@ -560,8 +574,8 @@ body {
 .envios__iframe {
     border: solid 3px black;
     margin: 15px auto;
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
 }
 .envios__precio {
     font-size: 14px;
