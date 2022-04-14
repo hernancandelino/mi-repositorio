@@ -366,26 +366,14 @@ body {
     font-size: 37px;
     margin: 25px;
 }
-.percheros {
-    margin: 0 110px;
+.card {
+    border-radius: 20px;
 }
-.percheros__titulo {
-    margin-top: 45px;
-    margin-bottom: 25px;
-    margin-left: 15px;
-    font-size: 22px;
+.card-title {
+    font-size: 17px;
 }
-.percheros .percheros__imagen {
-    border: groove 4px black;
-    width: 100%;
-    height: 275px;
-}
-.percheros .percheros__texto {
-    border: groove 4px black;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    font-size: 15px;
+.card-img-top {
+    padding: 12px 7px;
 }
 /* envios */
 .envios__titulo {
@@ -540,28 +528,16 @@ body {
 /* productos */
 .nuestrosproductos {
     font-size: 30px;
-    margin: 10px;
+    margin: 15px;
 }
-.percheros {
-    margin: 0 60px;
+.card {
+    border-radius: 15px;
 }
-.percheros__titulo {
-    margin-top: 30px;
-    margin-bottom: 25px;
-    margin-left: 15px;
-    font-size: 20px;
+.card-title {
+    font-size: 12px;
 }
-.percheros .percheros__imagen {
-    border: groove 2px black;
-    width: 100%;
-    height: 200px;
-}
-.percheros .percheros__texto {
-    border: groove 2px black;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    font-size: 11px;
+.card-img-top {
+    padding: 8px 5px;
 }
 /* envios */
 .envios__titulo {
