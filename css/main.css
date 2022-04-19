@@ -114,7 +114,7 @@ body {
 }
 .quienessomos .quienessomos__parrafo {
     font-family: 'Faustina', serif;
-    width: 450px;
+    width: 475px;
     font-size: 27px;
     text-align: center;
 }
@@ -123,18 +123,15 @@ body {
 }
 .valores {
     font-family: 'Faustina', serif;
-    font-size: 20px;
-    width: 15%;
+    font-size: 17px;
+    width: 20%;
     text-align: center;
-    margin: 10px 10px 10px 10px;
     font-weight: 800;
     display: inline-block;
-    background: #deb887d8;
-    justify-self: center;
 }
 .valores-div {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 .valores__titulo {
     font-family: 'Faustina', serif;
@@ -373,8 +370,7 @@ body {
     margin: 15px auto;
 }
 .valores {
-    font-size: 15px;
-    margin: 7px;
+    font-size: 10px;
 }
 .valores__titulo {
     font-size: 25px;
@@ -425,11 +421,9 @@ body {
 .formulario__input {
     width: 50%;
     font-size: 17px;
-    margin: 10px 15px;
 }
 .formulario__label {
     font-size: 17px;
-    margin: 15px;
 }
 .formulario__legend {
     font-size: 20px;
@@ -537,8 +531,8 @@ body {
     margin: 12px auto;
 }
 .valores {
-    font-size: 15px;
-    margin: 7px;
+    font-size: 8px;
+    width: 20%;
 }
 .valores__titulo {
     font-size: 22px;
@@ -590,11 +584,9 @@ body {
 .formulario__input {
     width: 60%;
     font-size: 14px;
-    margin: 7px 15px;
 }
 .formulario__label {
     font-size: 17px;
-    margin: 15px;
 }
 .formulario__legend {
     font-size: 17px;
@@ -604,7 +596,6 @@ body {
     padding: 6px;
     font-size: 15px;
     border: groove 3px white;
-    margin: 10px 17px;
 }
 .ubicacion__titulo {
     font-size: 24px
