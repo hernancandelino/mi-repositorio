@@ -1,0 +1,671 @@
+/* global */
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-image: url(../img/img-fondo-pagina.jpg);
+}
+
+/* encabezado */
+.encabezado {
+  padding: 0px;
+  font-family: "Faustina", serif;
+}
+
+.menu {
+  width: 100%;
+  background: #b3ad08ee;
+  padding: 0px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.menu .menu__navegacion {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  border: groove antiquewhite 7px;
+  font-family: "Faustina", serif;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #e2be28), color-stop(50%, #debc11), to(#cdb210));
+  background: linear-gradient(180deg, #e2be28 25%, #debc11 50%, #cdb210 100%);
+  width: 100%;
+  font-size: 25px;
+}
+
+.menu .menu__navegacion:hover {
+  background: white;
+  border: groove #999 7px;
+}
+
+/* footer */
+.footer {
+  margin: 45px 15px 15px 15px;
+  padding: 10px;
+  background: black;
+}
+
+.footer .footer__div {
+  background: black;
+}
+
+.footer .footer__div .footer__redes {
+  text-decoration: none;
+  font-size: 17px;
+  background: black;
+  font-family: "Faustina", serif;
+  color: white;
+}
+
+/* inicio */
+.article__titulo {
+  text-align: center;
+  font-family: "Faustina", serif;
+  font-size: 45px;
+  font-weight: 800;
+  margin: 30px;
+}
+
+.article {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 2fr;
+      grid-template-columns: 3fr 2fr;
+  margin-top: 50px;
+}
+
+.article .article__imagen {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.article .article__texto {
+  width: 300px;
+  font-size: 25px;
+  font-family: "Faustina", serif;
+  text-align: center;
+}
+
+.section__title {
+  font-family: "Faustina", serif;
+  font-size: 40px;
+  margin: 30px;
+  font-weight: 800;
+}
+
+.section {
+  display: block;
+  width: 700px;
+  height: 700px;
+  margin: 0 auto;
+}
+
+.section .carousel-item {
+  height: 700px;
+  width: 700px;
+}
+
+.carousel-control-prev {
+  width: 50%;
+}
+
+.carousel-control-next {
+  width: 50%;
+}
+
+/* quienes somos */
+.quienessomos__titulo {
+  font-family: "Faustina", serif;
+  font-size: 45px;
+  margin: 30px;
+  font-weight: 800;
+}
+
+.quienessomos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 2fr;
+      grid-template-columns: 3fr 2fr;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.quienessomos div {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.quienessomos div .quienessomos__imagen {
+  display: block;
+  margin: 0 auto;
+  height: 400px;
+  width: 350px;
+}
+
+.quienessomos div .quienessomos__parrafo {
+  font-family: "Faustina", serif;
+  width: 400px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.valores__titulo {
+  font-family: "Faustina", serif;
+  font-size: 40px;
+  margin: 30px;
+  font-weight: 800;
+}
+
+.valores-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.valores-div .valores {
+  font-family: "Faustina", serif;
+  font-size: 25px;
+  width: 40%;
+  text-align: center;
+  font-weight: 800;
+  display: inline-block;
+}
+
+.contacto {
+  text-decoration: none;
+  color: black;
+  font-family: "Faustina", serif;
+  margin: 20px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.contacto:hover {
+  color: white;
+}
+
+/* productos */
+.nuestrosproductos {
+  font-family: "Faustina", serif;
+  font-size: 45px;
+  margin: 30px;
+  font-weight: 800;
+}
+
+.col {
+  padding: 0%;
+  margin: 15px auto;
+  width: 35%;
+}
+
+.col .card {
+  background: #deb887d8;
+  border: groove #999 3px;
+  border-radius: 25px;
+}
+
+.col .card .card-img-top {
+  width: 90%;
+  height: 90%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 15px 10px;
+}
+
+.col .card .card-title {
+  font-family: "Faustina", serif;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.ratona {
+  width: 90%;
+  height: 70%;
+}
+
+.perchero {
+  width: 80%;
+  height: 90%;
+}
+
+/* envios */
+.envios__titulo {
+  font-family: "Faustina", serif;
+  font-size: 45px;
+  margin: 30px;
+  font-weight: 800;
+}
+
+.envios .envios__zona {
+  font-family: "Faustina", serif;
+  font-size: 40px;
+  margin: 15px;
+  font-weight: 800;
+}
+
+.envios .envios__precio {
+  font-family: "Faustina", serif;
+  font-size: 25px;
+  margin-left: 5px;
+}
+
+.envios .envios__iframe {
+  border: solid 5px black;
+  display: block;
+  margin: 25px auto;
+  width: 700px;
+  height: 600px;
+}
+
+/* contacto */
+.contacto__titulo {
+  font-family: "Faustina", serif;
+  font-size: 45px;
+  margin: 30px;
+  font-weight: 800;
+}
+
+.formulario {
+  margin: 10px auto;
+  width: 95%;
+}
+
+.formulario .formulario__legend {
+  font-family: "Faustina", serif;
+  font-size: 25px;
+}
+
+.formulario div .formulario__label {
+  font-family: "Faustina", serif;
+  margin: 5px;
+  font-size: 25px;
+}
+
+.formulario div .formulario__input {
+  display: block;
+  font-family: "Faustina", serif;
+  margin: 5px;
+  width: 30%;
+  background: #deb887d8;
+  font-size: 25px;
+  border: solid 2px black;
+}
+
+.formulario div textarea {
+  height: 107px;
+}
+
+.formulario div .formulario__boton {
+  padding: 7px;
+  margin: 10px 25px;
+  font-family: "Faustina", serif;
+  font-size: 25px;
+  background: black;
+  color: white;
+  border: groove antiquewhite 5px;
+}
+
+.formulario div .formulario__boton:hover {
+  background-color: #deb887d8;
+  color: black;
+  border: groove #999 5px;
+}
+
+.ubicacion__titulo {
+  font-family: "Faustina", serif;
+  font-size: 45px;
+  margin: 30px;
+  font-weight: 800;
+}
+
+.ubicacion .ubicacion__direccion {
+  display: block;
+  font-family: "Faustina", serif;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-size: 25px;
+}
+
+.ubicacion .ubicacion__iframe {
+  border: solid 5px black;
+  display: block;
+  margin: 25px auto;
+  width: 700px;
+  height: 600px;
+}
+
+.medios__titulo {
+  font-family: "Faustina", serif;
+  font-size: 45px;
+  margin: 30px;
+  font-weight: 800;
+}
+
+.medios {
+  margin: 10px;
+}
+
+.medios .medios__redes {
+  font-family: "Faustina", serif;
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+
+.medios .medios__redes img {
+  height: 30px;
+  width: 30px;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* encabezado */
+  .menu .menu__navegacion {
+    border: 5px;
+    font-size: 20px;
+  }
+  .menu .menu__navegacion:hover {
+    border: groove #999 5px;
+  }
+  /* footer */
+  .footer {
+    margin: 25px 12px 12px 12px;
+    padding: 7px;
+  }
+  /* index */
+  .article__titulo {
+    font-size: 40px;
+  }
+  .article {
+    margin-top: 30px;
+  }
+  .article .article__imagen {
+    width: 200px;
+  }
+  .article .article .article__texto {
+    width: 275px;
+    font-size: 20px;
+  }
+  .section__title {
+    font-size: 35px;
+  }
+  .section {
+    width: 450px;
+    height: 450px;
+  }
+  .section .carousel-item {
+    height: 450px;
+    width: 450px;
+  }
+  .carousel-control-prev {
+    width: 20%;
+  }
+  .carousel-control-next {
+    width: 20%;
+  }
+  /* quienes somos */
+  .quienessomos__titulo {
+    font-size: 40px;
+  }
+  .quienessomos {
+    display: block;
+  }
+  .quienessomos div .quienessomos__imagen {
+    height: 400px;
+    width: 400px;
+  }
+  .quienessomos div .quienessomos__parrafo {
+    width: 350px;
+    font-size: 20px;
+    margin: 15px auto;
+  }
+  .valores__titulo {
+    font-size: 35px;
+  }
+  .valores-div .valores {
+    font-size: 20px;
+  }
+  .contacto {
+    display: block;
+    margin: 20px 10px;
+    font-size: 20px;
+    text-align: center;
+  }
+  /* productos */
+  .nuestrosproductos {
+    font-size: 40px;
+  }
+  .card {
+    border-radius: 20px;
+  }
+  .card .card-img-top {
+    padding: 12px 7px;
+  }
+  .card .card-title {
+    font-size: 20px;
+  }
+  /* envios */
+  .envios__titulo {
+    font-size: 40px;
+  }
+  .envios .envios__zona {
+    font-size: 35px;
+  }
+  .envios .envios__precio {
+    font-size: 20px;
+    text-align: center;
+  }
+  .envios .envios__iframe {
+    border: solid 4px black;
+    margin: 20px auto;
+    width: 500px;
+    height: 500px;
+  }
+  /* contacto */
+  .contacto__titulo {
+    font-size: 40px;
+  }
+  .formulario .formulario__legend {
+    font-size: 20px;
+  }
+  .formulario div .formulario__label {
+    font-size: 20px;
+  }
+  .formulario div .formulario__input {
+    width: 50%;
+    font-size: 20px;
+  }
+  .formulario div .formulario__boton {
+    padding: 8px;
+    font-size: 40px;
+    border: 4px;
+  }
+  .formulario div .formulario__boton:hover {
+    border: 4px;
+  }
+  .ubicacion__titulo {
+    font-size: 40px;
+  }
+  .ubicacion .ubicacion__direccion {
+    font-size: 20px;
+  }
+  .ubicacion .ubicacion__iframe {
+    border: solid 4px black;
+    margin: 20px auto;
+    width: 500px;
+    height: 500px;
+  }
+  .medios__titulo {
+    font-size: 40px;
+  }
+  .medios .medios__redes {
+    font-size: 20px;
+  }
+  .medios .medios__redes img {
+    height: 25px;
+    width: 25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* encabezado */
+  .menu .menu__navegacion {
+    border: 3px;
+    font-size: 17px;
+  }
+  .menu .menu__navegacion:hover {
+    border: 3px;
+  }
+  /* footer */
+  .footer {
+    margin: 25px 10px 10px 10px;
+    padding: 7px;
+  }
+  /* index */
+  .article__titulo {
+    font-size: 35px;
+    margin-top: 20px;
+  }
+  .article {
+    display: block;
+    margin-top: 25px;
+  }
+  .article .article__imagen {
+    width: 200px;
+  }
+  .article .article .article__texto {
+    display: block;
+    margin: 10px auto;
+    width: 250px;
+    font-size: 17px;
+  }
+  .section__title {
+    font-size: 25px;
+  }
+  .section {
+    width: 300px;
+    height: 300px;
+  }
+  .section .carousel-item {
+    height: 300px;
+    width: 300px;
+  }
+  .carousel-control-prev {
+    width: 10%;
+  }
+  .carousel-control-next {
+    width: 10%;
+  }
+  /* quienes somos */
+  .quienessomos__titulo {
+    font-size: 35px;
+  }
+  .quienessomos {
+    display: block;
+  }
+  .quienessomos div .quienessomos .quienessomos__imagen {
+    height: 300px;
+    width: 300px;
+  }
+  .quienessomos div .quienessomos .quienessomos__parrafo {
+    width: 300px;
+    font-size: 17px;
+    margin: 12px auto;
+  }
+  .valores__titulo {
+    font-size: 25px;
+  }
+  .valores-div .valores {
+    font-size: 8px;
+    width: 20%;
+  }
+  .contacto {
+    display: block;
+    margin: 30px 10px;
+    font-size: 17px;
+    text-align: center;
+  }
+  /* productos */
+  .nuestrosproductos {
+    font-size: 35px;
+  }
+  .card {
+    border-radius: 15px;
+  }
+  .card .card-img-top {
+    padding: 8px 5px;
+  }
+  .card .card-title {
+    font-size: 17px;
+  }
+  /* envios */
+  .envios__titulo {
+    font-size: 35px;
+  }
+  .envios .envios__zona {
+    font-size: 25px;
+  }
+  .envios .envios__precio {
+    font-size: 17px;
+    text-align: center;
+  }
+  .envios .envios__iframe {
+    border: 3px;
+    margin: 15px auto;
+    width: 300px;
+    height: 300px;
+  }
+  /* contacto */
+  .contacto__titulo {
+    font-size: 35px;
+  }
+  .formulario .formulario__legend {
+    font-size: 17px;
+    text-align: center;
+  }
+  .formulario .formulario__label {
+    font-size: 17px;
+  }
+  .formulario .formulario__input {
+    width: 60%;
+    font-size: 17px;
+  }
+  .formulario .formulario__boton {
+    padding: 6px;
+    font-size: 17px;
+    border: 3px;
+  }
+  .formulario .formulario__boton:hover {
+    border: 3px;
+  }
+  .ubicacion__titulo {
+    font-size: 25px;
+  }
+  .ubicacion .ubicacion__direccion {
+    font-size: 17px;
+  }
+  .ubicacion .ubicacion__iframe {
+    border: 3px;
+    margin: 15px auto;
+    width: 300px;
+    height: 300px;
+  }
+  .medios__titulo {
+    font-size: 25px;
+  }
+  .medios .medios__redes {
+    font-size: 17px;
+  }
+  .medios .medios__redes img {
+    height: 22px;
+    width: 22px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

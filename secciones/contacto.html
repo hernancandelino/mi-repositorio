@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@1,500&display=swap" rel="stylesheet">
   
     <link rel="shortcut icon" href="../img/img-logo.jpg">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../scss/main.css">
 </head>
 
 <body>
@@ -64,48 +64,46 @@
         <form class="formulario" action="#">
             <h4 class="formulario__legend">Para cualquier duda o consulta completar este formulario:</h4>
             <div>
-                <label class="formulario__label" for="nombre y apellido"> Nombre y Apellido</label>
-                <input class="formulario__input" type="text" name="nombre y apellido" placeholder="Ingrese su nombre" required>
-                </div>
-                <div>
-                <label class="formulario__label" for="mail">Email</label>
-                <input class="formulario__input" type="text" name="mail" placeholder="Ingrese su email" required>
-                </div>
-                <div>
-                <label class="formulario__label" for="telefono">Teléfono</label>
-                <input class="formulario__input" type="text" name="telefono" placeholder="Ingrese su teléfono" required>
-                </div>
-                <div>
-                <label class="formulario__label" for="comentario"> Comentario</label>
-                <textarea class="formulario__input" name="comentario" placeholder="Escriba su comentario"></textarea>
-                </div>
-                <div>
-                <input class="formulario__boton" type="submit" value="Enviar">
-                <input class="formulario__boton" type="reset" value="Reiniciar">
-                </div>
+              <label class="formulario__label" for="nombre y apellido"> Nombre y Apellido</label>
+              <input class="formulario__input" type="text" name="nombre y apellido" placeholder="Ingrese su nombre" required>
+            </div>
+            <div>
+              <label class="formulario__label" for="mail">Email</label>
+              <input class="formulario__input" type="text" name="mail" placeholder="Ingrese su email" required>
+            </div>
+            <div>
+              <label class="formulario__label" for="telefono">Teléfono</label>
+              <input class="formulario__input" type="text" name="telefono" placeholder="Ingrese su teléfono" required>
+            </div>
+            <div>
+              <label class="formulario__label" for="comentario"> Comentario</label>
+              <textarea class="formulario__input" name="comentario" placeholder="Escriba su comentario"></textarea>
+            </div>
+            <div>
+              <input class="formulario__boton" type="submit" value="Enviar">
+              <input class="formulario__boton" type="reset" value="Reiniciar">
+            </div>
         </form>
     </div>
 </section>
 
 <section>
-    <div>
+    <div class="ubicacion">
         <h4 class="ubicacion__titulo">Ubicación</h4>
-        <iframe class="envios__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.496830475668!2d-58.498443484767904!3d-34.692646680436596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccecd761f98dd%3A0x822c73ebf47230f7!2sDomingo%20Millan%2C%20Villa%20Madero%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1646877374527!5m2!1ses-419!2sar" width="500" height="400" style="border:2;" loading="lazy"></iframe>
+        <iframe class="ubicacion__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.496830475668!2d-58.498443484767904!3d-34.692646680436596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccecd761f98dd%3A0x822c73ebf47230f7!2sDomingo%20Millan%2C%20Villa%20Madero%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1646877374527!5m2!1ses-419!2sar" width="500" height="400" style="border:2;" loading="lazy"></iframe>
     </div>
-    <div>
+    <div class="ubicacion">
         <a class="ubicacion__direccion" href="https://goo.gl/maps/d7MNxX37tdLNaNLy9" target="_blank"> Domingo Millán, La Matanza</a>
     </div>
 </section>
 
 <section>
+  <h4 class="medios__titulo">Medios de contacto</h4>
 <div class="medios">
-    <h4 class="medios__titulo">Medios de contacto</h4>
-    <img src="../img/img-logo-instagram.jpg" alt="instagram"> 
-    <a class="medios__redes" href="https://www.instagram.com/muebleria.sansossio/" target="_blank"> @muebleria.sansossio</a>
+    <a class="medios__redes" href="https://www.instagram.com/muebleria.sansossio/" target="_blank"> <img src="../img/img-logo-instagram.jpg" alt="instagram"> @muebleria.sansossio</a>
 </div>
 <div class="medios">
-    <img src="../img/img-logo-wpp.jpg" alt="wpp"> 
-    <a class="medios__redes" href="https://wa.link/blljap" target="_blank">+54 9 11 24792455</a>
+    <a class="medios__redes" href="https://wa.link/blljap" target="_blank">    <img src="../img/img-logo-wpp.jpg" alt="wpp"> +54 9 11 24792455</a>
 </div>
 </section>
 
