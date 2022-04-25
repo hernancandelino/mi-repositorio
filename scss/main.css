@@ -73,19 +73,27 @@ body {
   -ms-grid-columns: 3fr 2fr;
       grid-template-columns: 3fr 2fr;
   margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 .article .article__imagen {
   display: block;
   margin: 0 auto;
-  width: 300px;
+  width: 400px;
 }
 
-.article .article__texto {
-  width: 300px;
-  font-size: 25px;
+.article div {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.article div .article__texto {
+  width: 350px;
+  font-size: 30px;
   font-family: "Faustina", serif;
   text-align: center;
+  display: block;
 }
 
 .section__title {
@@ -256,6 +264,17 @@ body {
   margin-left: 5px;
 }
 
+.envios .envios__precio .envios__contacto {
+  text-decoration: none;
+  color: black;
+  font-family: "Faustina", serif;
+  font-size: 25px;
+}
+
+.envios .envios__precio .envios__contacto:hover {
+  color: white;
+}
+
 .envios .envios__iframe {
   border: solid 5px black;
   display: block;
@@ -368,10 +387,11 @@ body {
 @media (min-width: 481px) and (max-width: 768px) {
   /* encabezado */
   .menu .menu__navegacion {
-    border: 5px;
+    border: groove antiquewhite 5px;
     font-size: 20px;
   }
   .menu .menu__navegacion:hover {
+    background: white;
     border: groove #999 5px;
   }
   /* footer */
@@ -379,22 +399,29 @@ body {
     margin: 25px 12px 12px 12px;
     padding: 7px;
   }
+  .footer .footer__div .footer__redes {
+    font-size: 12px;
+  }
   /* index */
   .article__titulo {
     font-size: 40px;
   }
   .article {
     margin-top: 30px;
+    margin-bottom: 40px;
+    display: block;
   }
   .article .article__imagen {
-    width: 200px;
+    width: 300px;
+    height: 400px;
   }
-  .article .article .article__texto {
-    width: 275px;
-    font-size: 20px;
+  .article div .article__texto {
+    font-size: 25px;
+    margin: 10px auto;
   }
   .section__title {
     font-size: 35px;
+    margin: 25px;
   }
   .section {
     width: 450px;
@@ -413,6 +440,7 @@ body {
   /* quienes somos */
   .quienessomos__titulo {
     font-size: 40px;
+    margin: 25px;
   }
   .quienessomos {
     display: block;
@@ -428,6 +456,7 @@ body {
   }
   .valores__titulo {
     font-size: 35px;
+    margin: 25px;
   }
   .valores-div .valores {
     font-size: 20px;
@@ -440,6 +469,7 @@ body {
   }
   /* productos */
   .nuestrosproductos {
+    margin: 25px;
     font-size: 40px;
   }
   .card {
@@ -449,11 +479,11 @@ body {
     padding: 12px 7px;
   }
   .card .card-title {
-    font-size: 20px;
+    font-size: 20px !important;
   }
   /* envios */
   .envios__titulo {
-    font-size: 40px;
+    font-size: 40px 25px;
   }
   .envios .envios__zona {
     font-size: 35px;
@@ -462,14 +492,18 @@ body {
     font-size: 20px;
     text-align: center;
   }
+  .envios .envios__precio .envios__contacto {
+    font-size: 20px;
+  }
   .envios .envios__iframe {
     border: solid 4px black;
     margin: 20px auto;
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
   }
   /* contacto */
   .contacto__titulo {
+    margin: 25px;
     font-size: 40px;
   }
   .formulario .formulario__legend {
@@ -484,14 +518,15 @@ body {
   }
   .formulario div .formulario__boton {
     padding: 8px;
-    font-size: 40px;
-    border: 4px;
+    font-size: 20px;
+    border: groove antiquewhite 4px;
   }
   .formulario div .formulario__boton:hover {
-    border: 4px;
+    border: groove #999 4px;
   }
   .ubicacion__titulo {
-    font-size: 40px;
+    margin: 25px;
+    font-size: 35px;
   }
   .ubicacion .ubicacion__direccion {
     font-size: 20px;
@@ -499,11 +534,12 @@ body {
   .ubicacion .ubicacion__iframe {
     border: solid 4px black;
     margin: 20px auto;
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
   }
   .medios__titulo {
-    font-size: 40px;
+    margin: 25px;
+    font-size: 35px;
   }
   .medios .medios__redes {
     font-size: 20px;
@@ -517,37 +553,39 @@ body {
 @media screen and (max-width: 480px) {
   /* encabezado */
   .menu .menu__navegacion {
-    border: 3px;
+    border: groove antiquewhite 3px;
     font-size: 17px;
   }
   .menu .menu__navegacion:hover {
-    border: 3px;
+    border: groove #999 3px;
   }
   /* footer */
   .footer {
     margin: 25px 10px 10px 10px;
     padding: 7px;
   }
+  .footer .footer__div .footer__redes {
+    font-size: 10px;
+  }
   /* index */
   .article__titulo {
     font-size: 35px;
-    margin-top: 20px;
   }
   .article {
     display: block;
-    margin-top: 25px;
+    margin: 25px 0;
   }
   .article .article__imagen {
     width: 200px;
   }
-  .article .article .article__texto {
-    display: block;
-    margin: 10px auto;
-    width: 250px;
-    font-size: 17px;
+  .article .article__texto {
+    margin: 7px auto;
+    width: 275px !important;
+    font-size: 17px !important;
   }
   .section__title {
     font-size: 25px;
+    margin: 20px;
   }
   .section {
     width: 300px;
@@ -565,26 +603,27 @@ body {
   }
   /* quienes somos */
   .quienessomos__titulo {
+    margin: 20px;
     font-size: 35px;
   }
   .quienessomos {
     display: block;
   }
-  .quienessomos div .quienessomos .quienessomos__imagen {
+  .quienessomos div .quienessomos__imagen {
     height: 300px;
     width: 300px;
   }
-  .quienessomos div .quienessomos .quienessomos__parrafo {
+  .quienessomos div .quienessomos__parrafo {
     width: 300px;
     font-size: 17px;
     margin: 12px auto;
   }
   .valores__titulo {
+    margin: 20px;
     font-size: 25px;
   }
   .valores-div .valores {
-    font-size: 8px;
-    width: 20%;
+    font-size: 17px;
   }
   .contacto {
     display: block;
@@ -595,6 +634,7 @@ body {
   /* productos */
   .nuestrosproductos {
     font-size: 35px;
+    margin: 20px;
   }
   .card {
     border-radius: 15px;
@@ -603,11 +643,12 @@ body {
     padding: 8px 5px;
   }
   .card .card-title {
-    font-size: 17px;
+    font-size: 17px !important;
   }
   /* envios */
   .envios__titulo {
     font-size: 35px;
+    margin: 20px;
   }
   .envios .envios__zona {
     font-size: 25px;
@@ -616,14 +657,18 @@ body {
     font-size: 17px;
     text-align: center;
   }
+  .envios .envios__precio .envios__contacto {
+    font-size: 17px;
+  }
   .envios .envios__iframe {
-    border: 3px;
+    border: solid black 3px;
     margin: 15px auto;
-    width: 300px;
-    height: 300px;
+    width: 275px;
+    height: 275px;
   }
   /* contacto */
   .contacto__titulo {
+    margin: 20px;
     font-size: 35px;
   }
   .formulario .formulario__legend {
@@ -631,31 +676,32 @@ body {
     text-align: center;
   }
   .formulario .formulario__label {
-    font-size: 17px;
+    font-size: 17px !important;
   }
   .formulario .formulario__input {
-    width: 60%;
-    font-size: 17px;
+    width: 60% !important;
+    font-size: 17px !important;
   }
   .formulario .formulario__boton {
-    padding: 6px;
-    font-size: 17px;
-    border: 3px;
+    padding: 6px !important;
+    font-size: 17px !important;
+    border: groove antiquewhite 3px !important;
   }
   .formulario .formulario__boton:hover {
-    border: 3px;
+    border: groove #999 3px !important;
   }
   .ubicacion__titulo {
+    margin: 20px;
     font-size: 25px;
   }
   .ubicacion .ubicacion__direccion {
     font-size: 17px;
   }
   .ubicacion .ubicacion__iframe {
-    border: 3px;
+    border: solid black 3px;
     margin: 15px auto;
-    width: 300px;
-    height: 300px;
+    width: 275px;
+    height: 275px;
   }
   .medios__titulo {
     font-size: 25px;

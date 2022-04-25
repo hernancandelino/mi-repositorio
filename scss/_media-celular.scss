@@ -3,10 +3,10 @@
     /* encabezado */
     .menu {
         .menu__navegacion {
-            border: 3px;
+            border: groove antiquewhite 3px;
             font-size: $size-parrafos-celular;
             &:hover {
-                border: 3px;
+                border: $border-item-hover 3px;
             }
         }
     } 
@@ -14,27 +14,31 @@
     .footer {
         margin: 25px 10px 10px 10px;
         padding: 7px;
+        .footer__div {
+            .footer__redes {
+                font-size: 10px;
+            }
+        }
     }
     /* index */
     .article__titulo {
         font-size: $size-titulos-celular;
-        margin-top: 20px;
     }
     .article {
         display: block;
-        margin-top: 25px;
+        margin: 25px 0;
         .article__imagen {
             width: 200px;
         }
-        .article .article__texto {
-            display: block;
-            margin: 10px auto;
-            width: 250px;
-            font-size: $size-parrafos-celular;
+        .article__texto {
+            margin: 7px auto;
+            width: 275px !important;
+            font-size: $size-parrafos-celular !important;
         }
     }
     .section__title {
         font-size: $size-parrafos;
+        margin: $margin-titulos-celular;
     }
     .section {
         width: 300px;
@@ -52,16 +56,17 @@
     }
     /* quienes somos */
     .quienessomos__titulo {
+        margin: $margin-titulos-celular;
         font-size: $size-titulos-celular;
     }
     .quienessomos {
         display: block;
         div {
-            .quienessomos .quienessomos__imagen {
+            .quienessomos__imagen {
                 height: 300px;
                 width: 300px;
             }
-            .quienessomos .quienessomos__parrafo {
+            .quienessomos__parrafo {
                 width: 300px;
                 font-size: $size-parrafos-celular;
                 margin: 12px auto;
@@ -69,12 +74,12 @@
         }
     }
     .valores__titulo {
+        margin: $margin-titulos-celular;
         font-size: $size-parrafos;
     }
     .valores-div {
         .valores {
-            font-size: 8px;
-            width: 20%;
+            font-size: $size-parrafos-celular;
         }
     }
     .contacto {
@@ -86,6 +91,7 @@
     /* productos */
     .nuestrosproductos {
         font-size: $size-titulos-celular;
+        margin: $margin-titulos-celular;
     }
     .card {
         border-radius: 15px;
@@ -93,12 +99,13 @@
             padding: 8px 5px;
         }
         .card-title {
-            font-size: $size-parrafos-celular;
+            font-size: $size-parrafos-celular !important;
         }
         }
     /* envios */
     .envios__titulo {
         font-size: $size-titulos-celular;
+        margin: $margin-titulos-celular;
     }
     .envios {
         .envios__zona {
@@ -107,16 +114,20 @@
         .envios__precio {
             font-size: $size-parrafos-celular;
             text-align: center;
+            .envios__contacto {
+                font-size: $size-parrafos-celular;
+            }
         }
         .envios__iframe {
-            border: 3px;
+            border: solid black 3px;
             margin: 15px auto;
-            width: 300px;
-            height: 300px;
+            width: 275px;
+            height: 275px;
         }
     }
     /* contacto */
     .contacto__titulo {
+        margin: $margin-titulos-celular;
         font-size: $size-titulos-celular;
     }
     .formulario {
@@ -125,22 +136,23 @@
             text-align: center;
         }
         .formulario__label {
-            font-size: $size-parrafos-celular;
+            font-size: $size-parrafos-celular !important;
         }
         .formulario__input {
-            width: 60%;
-            font-size: $size-parrafos-celular;
+            width: 60% !important;
+            font-size: $size-parrafos-celular !important;
         }
         .formulario__boton {
-            padding: 6px;
-            font-size: $size-parrafos-celular;
-            border: 3px;
+            padding: 6px !important;
+            font-size: $size-parrafos-celular !important;
+            border: $border-item 3px !important;
             &:hover {
-                border: 3px;
+                border: $border-item-hover 3px !important;
             }
         }
     }
     .ubicacion__titulo {
+        margin: $margin-titulos-celular;
         font-size: $size-parrafos;
     }
     .ubicacion {
@@ -148,10 +160,10 @@
             font-size: $size-parrafos-celular;
         }
         .ubicacion__iframe {
-            border: 3px;
+            border: solid black 3px;
             margin: 15px auto;
-            width: 300px;
-            height: 300px;
+            width: 275px;
+            height: 275px;
         }
     }
     .medios__titulo {

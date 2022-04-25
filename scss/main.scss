@@ -63,16 +63,21 @@ body {
     display: grid;
     grid-template-columns: 3fr 2fr;
     margin-top: 50px;
+    margin-bottom: 100px;
         .article__imagen {
             display: block;
             margin: 0 auto;
-            width: 300px;
+            width: 400px;
         }
-        .article__texto {
-            width: 300px;
-            font-size: $size-parrafos;
-            font-family: $tipografia;
-            text-align: center;
+        div {
+            align-self: center;
+            .article__texto {
+                width: 350px;
+                font-size: 30px;
+                font-family: $tipografia;
+                text-align: center;
+                display: block;
+            }
         }
 }
 .section__title {
@@ -210,6 +215,15 @@ body {
         font-family: $tipografia;
         font-size: $size-parrafos;
         margin-left: 5px;
+        .envios__contacto {
+            text-decoration: none;
+            color: black;
+            font-family: $tipografia;
+            font-size: $size-parrafos;
+            &:hover {
+                color: white;
+            }
+        }
     }
     .envios__iframe {
         border: solid 5px black;
