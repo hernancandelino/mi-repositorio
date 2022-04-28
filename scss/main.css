@@ -16,7 +16,8 @@ body {
 
 .menu {
   width: 100%;
-  background: #b3ad08ee;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #e2be28), color-stop(50%, #debc11), to(#cdb210));
+  background: linear-gradient(180deg, #e2be28 25%, #debc11 50%, #cdb210 100%);
   padding: 0px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -62,8 +63,8 @@ body {
 .article__titulo {
   text-align: center;
   font-family: "Faustina", serif;
-  font-size: 45px;
-  font-weight: 800;
+  font-size: 60px;
+  font-weight: 1000;
   margin: 30px;
 }
 
@@ -97,10 +98,10 @@ body {
 }
 
 .section__title {
-  font-family: "Faustina", serif;
-  font-size: 40px;
+  font-size: 45px;
   margin: 30px;
   font-weight: 800;
+  font-family: "Faustina", serif;
 }
 
 .section {
@@ -124,11 +125,11 @@ body {
 }
 
 /* quienes somos */
-.quienessomos__titulo {
-  font-family: "Faustina", serif;
+.quienessomos__titulo, .valores__titulo {
   font-size: 45px;
   margin: 30px;
   font-weight: 800;
+  font-family: "Faustina", serif;
 }
 
 .quienessomos {
@@ -161,10 +162,7 @@ body {
 }
 
 .valores__titulo {
-  font-family: "Faustina", serif;
-  font-size: 40px;
-  margin: 30px;
-  font-weight: 800;
+  font-size: 36px;
 }
 
 .valores-div {
@@ -199,10 +197,10 @@ body {
 
 /* productos */
 .nuestrosproductos {
-  font-family: "Faustina", serif;
   font-size: 45px;
   margin: 30px;
   font-weight: 800;
+  font-family: "Faustina", serif;
 }
 
 .col {
@@ -245,15 +243,15 @@ body {
 
 /* envios */
 .envios__titulo {
-  font-family: "Faustina", serif;
   font-size: 45px;
   margin: 30px;
   font-weight: 800;
+  font-family: "Faustina", serif;
 }
 
 .envios .envios__zona {
   font-family: "Faustina", serif;
-  font-size: 40px;
+  font-size: 36px;
   margin: 15px;
   font-weight: 800;
 }
@@ -284,11 +282,11 @@ body {
 }
 
 /* contacto */
-.contacto__titulo {
-  font-family: "Faustina", serif;
+.contacto__titulo, .ubicacion__titulo, .medios__titulo {
   font-size: 45px;
   margin: 30px;
   font-weight: 800;
+  font-family: "Faustina", serif;
 }
 
 .formulario {
@@ -338,10 +336,7 @@ body {
 }
 
 .ubicacion__titulo {
-  font-family: "Faustina", serif;
-  font-size: 45px;
-  margin: 30px;
-  font-weight: 800;
+  font-size: 36px;
 }
 
 .ubicacion .ubicacion__direccion {
@@ -362,10 +357,7 @@ body {
 }
 
 .medios__titulo {
-  font-family: "Faustina", serif;
-  font-size: 45px;
-  margin: 30px;
-  font-weight: 800;
+  font-size: 36px;
 }
 
 .medios {
@@ -404,7 +396,7 @@ body {
   }
   /* index */
   .article__titulo {
-    font-size: 40px;
+    font-size: 50px;
   }
   .article {
     margin-top: 30px;
@@ -420,7 +412,7 @@ body {
     margin: 10px auto;
   }
   .section__title {
-    font-size: 35px;
+    font-size: 36px;
     margin: 25px;
   }
   .section {
@@ -438,8 +430,8 @@ body {
     width: 20%;
   }
   /* quienes somos */
-  .quienessomos__titulo {
-    font-size: 40px;
+  .quienessomos__titulo, .valores__titulo {
+    font-size: 36px;
     margin: 25px;
   }
   .quienessomos {
@@ -455,7 +447,7 @@ body {
     margin: 15px auto;
   }
   .valores__titulo {
-    font-size: 35px;
+    font-size: 30px;
     margin: 25px;
   }
   .valores-div .valores {
@@ -469,8 +461,8 @@ body {
   }
   /* productos */
   .nuestrosproductos {
+    font-size: 36px;
     margin: 25px;
-    font-size: 40px;
   }
   .card {
     border-radius: 20px;
@@ -483,10 +475,11 @@ body {
   }
   /* envios */
   .envios__titulo {
-    font-size: 40px 25px;
+    font-size: 36px;
+    margin: 25px;
   }
   .envios .envios__zona {
-    font-size: 35px;
+    font-size: 30px;
   }
   .envios .envios__precio {
     font-size: 20px;
@@ -502,9 +495,9 @@ body {
     height: 450px;
   }
   /* contacto */
-  .contacto__titulo {
+  .contacto__titulo, .ubicacion__titulo, .medios__titulo {
+    font-size: 36px;
     margin: 25px;
-    font-size: 40px;
   }
   .formulario .formulario__legend {
     font-size: 20px;
@@ -526,7 +519,7 @@ body {
   }
   .ubicacion__titulo {
     margin: 25px;
-    font-size: 35px;
+    font-size: 30px;
   }
   .ubicacion .ubicacion__direccion {
     font-size: 20px;
@@ -539,7 +532,7 @@ body {
   }
   .medios__titulo {
     margin: 25px;
-    font-size: 35px;
+    font-size: 30px;
   }
   .medios .medios__redes {
     font-size: 20px;
@@ -569,7 +562,7 @@ body {
   }
   /* index */
   .article__titulo {
-    font-size: 35px;
+    font-size: 45px;
   }
   .article {
     display: block;
@@ -584,7 +577,7 @@ body {
     font-size: 17px !important;
   }
   .section__title {
-    font-size: 25px;
+    font-size: 30px;
     margin: 20px;
   }
   .section {
@@ -602,9 +595,9 @@ body {
     width: 10%;
   }
   /* quienes somos */
-  .quienessomos__titulo {
+  .quienessomos__titulo, .valores__titulo {
+    font-size: 30px;
     margin: 20px;
-    font-size: 35px;
   }
   .quienessomos {
     display: block;
@@ -633,7 +626,7 @@ body {
   }
   /* productos */
   .nuestrosproductos {
-    font-size: 35px;
+    font-size: 30px;
     margin: 20px;
   }
   .card {
@@ -647,7 +640,7 @@ body {
   }
   /* envios */
   .envios__titulo {
-    font-size: 35px;
+    font-size: 30px;
     margin: 20px;
   }
   .envios .envios__zona {
@@ -667,9 +660,9 @@ body {
     height: 275px;
   }
   /* contacto */
-  .contacto__titulo {
+  .contacto__titulo, .ubicacion__titulo, .medios__titulo {
+    font-size: 30px;
     margin: 20px;
-    font-size: 35px;
   }
   .formulario .formulario__legend {
     font-size: 17px;
@@ -704,6 +697,7 @@ body {
     height: 275px;
   }
   .medios__titulo {
+    margin: 20px;
     font-size: 25px;
   }
   .medios .medios__redes {

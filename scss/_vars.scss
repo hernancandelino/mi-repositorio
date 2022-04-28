@@ -9,5 +9,26 @@ $size-parrafos: 25px;
 $size-parrafos-tablet: 20px;
 $size-parrafos-celular: 17px;
 $size-titulos: 45px;
-$size-titulos-tablet: 40px;
-$size-titulos-celular: 35px;
+$size-titulos-tablet: 36px;
+$size-titulos-celular: 30px;
+@mixin titulos {
+    font-size: $size-titulos;
+    margin: $margin-titulos;
+    font-weight: $font-titulos;
+    font-family: $tipografia;
+}
+@mixin titulos-tablet {
+    font-size: $size-titulos-tablet;
+    margin: $margin-titulos-tablet;
+}
+@mixin titulos-celular {
+    font-size: $size-titulos-celular;
+    margin: $margin-titulos-celular;
+}
+$bg: (
+    li: linear-gradient(180deg, rgba(226,190,40,1) 25%, rgba(222,188,17,1) 50%, rgba(205,178,16,1) 100%),
+    hover: white,
+    menu: #b3ad08ee,
+    footer: black,
+    card: #deb887d8,
+);

@@ -23,7 +23,7 @@
     }
     /* index */
     .article__titulo {
-        font-size: $size-titulos-tablet;
+        font-size: 50px;
     }
     .article {
         margin-top: 30px;
@@ -41,8 +41,7 @@
         }
     }
     .section__title {
-        font-size: $size-titulos-celular;
-        margin: $margin-titulos-tablet;
+        @include titulos-tablet;
     }
     .section {
         width: 450px;
@@ -61,8 +60,7 @@
     
     /* quienes somos */
     .quienessomos__titulo {
-        font-size: $size-titulos-tablet;
-        margin: $margin-titulos-tablet
+        @include titulos-tablet;
     }
     .quienessomos {
         display: block;
@@ -95,8 +93,7 @@
     }
     /* productos */
     .nuestrosproductos {
-        margin: $margin-titulos-tablet;
-        font-size: $size-titulos-tablet;
+        @include titulos-tablet;
     }
     .card {
         border-radius: 20px;
@@ -109,8 +106,7 @@
     }
     /* envios */
     .envios__titulo {
-        font-size: $size-titulos-tablet
-        $margin-titulos-tablet;
+        @include titulos-tablet;
     }
     .envios {
         .envios__zona {
@@ -132,8 +128,7 @@
     }
     /* contacto */
     .contacto__titulo {
-        margin: $margin-titulos-tablet;
-        font-size: $size-titulos-tablet;
+        @include titulos-tablet
     }
     .formulario {
         .formulario__legend {
@@ -159,7 +154,7 @@
     }
     .ubicacion__titulo {
         margin: $margin-titulos-tablet;
-        font-size: $size-titulos-celular;
+        font-size: $size-titulos-celular
     }
     .ubicacion {
         .ubicacion__direccion {

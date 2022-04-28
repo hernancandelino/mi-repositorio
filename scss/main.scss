@@ -15,7 +15,7 @@ body {
 }
 .menu {
     width: 100%;
-    background: #b3ad08ee;
+    background: map-get($bg, li);
     padding: 0px;
     justify-content: space-around;
     .menu__navegacion {
@@ -24,11 +24,11 @@ body {
         color: black;
         border: $border-item 7px;
         font-family: $tipografia;
-        background: linear-gradient(180deg, rgba(226,190,40,1) 25%, rgba(222,188,17,1) 50%, rgba(205,178,16,1) 100%);;
+        background: map-get($bg, li);
         width: 100%;
         font-size: $size-parrafos;
         &:hover {
-            background: white;
+            background: map-get($bg, hover);
             border: $border-item-hover 7px;
         }
     }
@@ -38,13 +38,13 @@ body {
 .footer {
     margin: 45px 15px 15px 15px;
     padding: 10px;
-    background: black;
+    background: map-get($bg, footer);
     .footer__div {
-        background: black;
+        background: map-get($bg, footer);
         .footer__redes {
             text-decoration: none;
             font-size: $size-parrafos-celular;
-            background: black;
+            background: map-get($bg, footer);
             font-family: $tipografia;
             color: white;
         }
@@ -55,8 +55,8 @@ body {
 .article__titulo {
     text-align: center;
     font-family: $tipografia;
-    font-size: $size-titulos;
-    font-weight: $font-titulos;
+    font-size: 60px;
+    font-weight: 1000;
     margin: $margin-titulos;
 }
 .article {
@@ -81,10 +81,7 @@ body {
         }
 }
 .section__title {
-    font-family: $tipografia;
-    font-size: $size-titulos-tablet;
-    margin: $margin-titulos;
-    font-weight: $font-titulos;
+    @include titulos;
 }
 .section {
     display: block;
@@ -104,10 +101,7 @@ body {
 }
 /* quienes somos */
 .quienessomos__titulo {
-    font-family: $tipografia;
-    font-size: $size-titulos;
-    margin: $margin-titulos;
-    font-weight: $font-titulos;
+    @include titulos;
 }
 .quienessomos {
     display: grid;
@@ -130,10 +124,8 @@ body {
     }
 }
 .valores__titulo {
-    font-family: $tipografia;
+    @extend .quienessomos__titulo;
     font-size: $size-titulos-tablet;
-    margin: $margin-titulos;
-    font-weight: $font-titulos;
 }
 .valores-div {
     display: flex;
@@ -161,17 +153,14 @@ body {
 
 /* productos */
 .nuestrosproductos {
-    font-family: $tipografia;
-    font-size: $size-titulos;
-    margin: $margin-titulos;
-    font-weight: $font-titulos;
+    @include titulos;
 }
 .col {
     padding: 0%;
     margin: 15px auto;
     width: 35%;
     .card {
-        background: #deb887d8;
+        background: map-get($bg,card);
         border: $border-item-hover 3px;
         border-radius: 25px;
         .card-img-top {
@@ -199,10 +188,7 @@ body {
 
 /* envios */
 .envios__titulo {
-    font-family: $tipografia;
-    font-size: $size-titulos;
-    margin: $margin-titulos;
-    font-weight: $font-titulos;
+    @include titulos;
 }
 .envios {
     .envios__zona {
@@ -236,10 +222,7 @@ body {
 
 /* contacto */
 .contacto__titulo {
-    font-family: $tipografia;
-    font-size: $size-titulos;
-    margin: $margin-titulos;
-    font-weight: $font-titulos;
+    @include titulos;
 }
 .formulario {
     margin: 10px auto;
@@ -259,7 +242,7 @@ body {
             font-family: $tipografia;
             margin: 5px;
             width: 30%;
-            background: #deb887d8;
+            background: map-get($bg, card);
             font-size: $size-parrafos;
             border: solid 2px black;
         }
@@ -271,11 +254,11 @@ body {
             margin: 10px 25px;
             font-family: $tipografia;
             font-size: $size-parrafos;
-            background: black;
+            background: map-get($bg, footer);
             color: white;
             border: $border-item 5px;
             &:hover {
-                background-color: #deb887d8;
+                background-color: map-get($bg, card);
                 color: black;
                 border: $border-item-hover 5px;
             }
@@ -283,10 +266,8 @@ body {
     }
 }
 .ubicacion__titulo {
-    font-family: $tipografia;
-    font-size: $size-titulos;
-    margin: $margin-titulos;
-    font-weight: $font-titulos;
+    @extend .contacto__titulo;
+    font-size: $size-titulos-tablet;
 }
 .ubicacion {
     .ubicacion__direccion {
@@ -306,10 +287,8 @@ body {
     }
 }
 .medios__titulo {
-    font-family: $tipografia;
-    font-size: $size-titulos;
-    margin: $margin-titulos;
-    font-weight: $font-titulos;
+    @extend .contacto__titulo;
+    font-size: $size-titulos-tablet;
 }
 .medios {
     margin: 10px;
