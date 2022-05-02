@@ -12,10 +12,11 @@ body {
 .encabezado {
     padding: 0px;
     font-family: $tipografia;
+    background: map-get($bg, footer) !important;
 }
 .menu {
     width: 100%;
-    background: map-get($bg, li);
+    background: map-get($bg, card);
     padding: 0px;
     justify-content: space-around;
     .menu__navegacion {
@@ -24,7 +25,7 @@ body {
         color: black;
         border: $border-item 7px;
         font-family: $tipografia;
-        background: map-get($bg, li);
+        background: map-get($bg, card);
         width: 100%;
         font-size: $size-parrafos;
         &:hover {
@@ -47,6 +48,9 @@ body {
             background: map-get($bg, footer);
             font-family: $tipografia;
             color: white;
+            img {
+                margin: 0 5px;
+            }
         }
     }
 }
@@ -155,25 +159,29 @@ body {
 .nuestrosproductos {
     @include titulos;
 }
-.col {
-    padding: 0%;
-    margin: 15px auto;
-    width: 35%;
-    .card {
-        background: map-get($bg,card);
-        border: $border-item-hover 3px;
-        border-radius: 25px;
-        .card-img-top {
-            width: 90%;
-            height: 90%;
-            align-self: center;
-            padding: 15px 10px;
-        }
-        .card-title {
-            font-family: $tipografia;
-            font-size: $size-parrafos;
-            text-align: center;
-            font-weight: $font-titulos;
+.row {
+    justify-content: space-evenly;
+    width: 100%;
+    .col {
+        padding: 0%;
+        width: 35%;
+        margin: 10px 0;
+        .card {
+            background: map-get($bg,card);
+            border: $border-item-hover 3px;
+            border-radius: 15px;
+            .card-img-top {
+                width: 90%;
+                height: 90%;
+                align-self: center;
+                padding: 15px 10px;
+            }
+            .card-title {
+                font-family: $tipografia;
+                font-size: $size-parrafos;
+                text-align: center;
+                font-weight: $font-titulos;
+            }
         }
     }
 }
@@ -190,13 +198,13 @@ body {
 .envios__titulo {
     @include titulos;
 }
+.envios__zona {
+    font-family: $tipografia;
+    font-size: $size-titulos-tablet;
+    margin: 15px;
+    font-weight: $font-titulos;
+}
 .envios {
-    .envios__zona {
-        font-family: $tipografia;
-        font-size: $size-titulos-tablet;
-        margin: 15px;
-        font-weight: $font-titulos;
-    }
     .envios__precio {
         font-family: $tipografia;
         font-size: $size-parrafos;
@@ -230,6 +238,7 @@ body {
     .formulario__legend {
         font-family: $tipografia;
         font-size: $size-parrafos;
+        text-align: center;
     }
     div {
         .formulario__label {
@@ -241,7 +250,7 @@ body {
             display: block;
             font-family: $tipografia;
             margin: 5px;
-            width: 30%;
+            width: 100%;
             background: map-get($bg, card);
             font-size: $size-parrafos;
             border: solid 2px black;

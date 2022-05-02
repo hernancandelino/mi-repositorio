@@ -96,10 +96,6 @@
         @include titulos-tablet;
     }
     .card {
-        border-radius: 20px;
-        .card-img-top {
-            padding: 12px 7px;
-        }
         .card-title {
             font-size: $size-parrafos-tablet !important;
         }
@@ -139,7 +135,6 @@
                 font-size: $size-parrafos-tablet;
             }
             .formulario__input {
-                width: 50%;
                 font-size: $size-parrafos-tablet;
             }
             .formulario__boton {

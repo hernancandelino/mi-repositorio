@@ -90,15 +90,14 @@
     .nuestrosproductos {
         @include titulos-celular;
     }
-    .card {
-        border-radius: 15px;
-        .card-img-top {
-            padding: 8px 5px;
+    .row {
+        .col {
+            width: 70%;
+            .card-title {
+                font-size: $size-parrafos-celular !important;
+            }
         }
-        .card-title {
-            font-size: $size-parrafos-celular !important;
-        }
-        }
+    }
     /* envios */
     .envios__titulo {
         @include titulos-celular;
@@ -134,7 +133,6 @@
             font-size: $size-parrafos-celular !important;
         }
         .formulario__input {
-            width: 60% !important;
             font-size: $size-parrafos-celular !important;
         }
         .formulario__boton {
