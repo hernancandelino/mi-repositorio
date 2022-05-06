@@ -5,63 +5,68 @@
     padding: 0%;
 }
 body {
-    background-image: url(../img/img-fondo-pagina.jpg);
+    background: linear-gradient(115deg, #969696 45%, #FFFFFF);
 }   
 
 /* encabezado */
 .encabezado {
     padding: 0px;
-    font-family: $tipografia;
-    background: map-get($bg, footer) !important;
+    font-family: 'Permanent Marker', cursive;    
+    background: black !important;
 }
 .menu {
     width: 100%;
-    background: map-get($bg, card);
+    background: linear-gradient(0deg, #696969 20%, black);
     padding: 0px;
     justify-content: space-around;
     .menu__navegacion {
         padding: 10px;
         text-decoration: none;
-        color: black;
-        border: $border-item 7px;
-        font-family: $tipografia;
-        background: map-get($bg, card);
+        color: white !important;
+        border: double 5px black;
+        font-family: 'Permanent Marker', cursive;        
+        background: linear-gradient(360deg, #696969 10%, black);
         width: 100%;
         font-size: $size-parrafos;
         &:hover {
             background: map-get($bg, hover);
-            border: $border-item-hover 7px;
+            color: black !important;
         }
     }
 }
 
 /* footer */
 .footer {
-    margin: 45px 15px 15px 15px;
+    margin-top: 45px;
     padding: 10px;
     background: map-get($bg, footer);
     .footer__div {
         background: map-get($bg, footer);
         .footer__redes {
             text-decoration: none;
-            font-size: $size-parrafos-celular;
+            font-size: $size-parrafos-tablet;
             background: map-get($bg, footer);
-            font-family: $tipografia;
+            font-family: 'Permanent Marker', cursive;        
             color: white;
             img {
-                margin: 0 5px;
+                margin: 7px 5px;
             }
         }
     }
 }
 
 /* inicio */
-.article__titulo {
-    text-align: center;
-    font-family: $tipografia;
-    font-size: 60px;
-    font-weight: 1000;
-    margin: $margin-titulos;
+.div-titulo {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    .article__titulo {
+        text-align: center;
+        font-family: 'Bangers', cursive;            
+        font-size: 60px;
+        font-weight: 1000;
+        margin: $margin-titulos;
+    }
 }
 .article {
     display: grid;
@@ -78,7 +83,7 @@ body {
             .article__texto {
                 width: 350px;
                 font-size: 30px;
-                font-family: $tipografia;
+                font-family: 'Bangers', cursive;            
                 text-align: center;
                 display: block;
             }
@@ -86,6 +91,7 @@ body {
 }
 .section__title {
     @include titulos;
+    font-size: $size-titulos-tablet;
 }
 .section {
     display: block;
@@ -95,6 +101,11 @@ body {
     .carousel-item {
         height: 700px;
         width: 700px;
+        .carousel-caption {
+            h5 {
+                font-family: 'Bangers', cursive;            
+            }
+        }
     }
 }
 .carousel-control-prev {
@@ -120,7 +131,7 @@ body {
             width: 350px;
         }
         .quienessomos__parrafo {
-            font-family: $tipografia;
+            font-family: 'Bangers', cursive;            
             width: 400px;
             font-size: $size-parrafos;
             text-align: center;
@@ -167,9 +178,8 @@ body {
         width: 35%;
         margin: 10px 0;
         .card {
-            background: map-get($bg,card);
-            border: $border-item-hover 3px;
-            border-radius: 15px;
+            background: linear-gradient(320deg, #969696 45%, #FFFFFF);
+            border: solid #000000 3px;
             .card-img-top {
                 width: 90%;
                 height: 90%;
@@ -238,7 +248,6 @@ body {
     .formulario__legend {
         font-family: $tipografia;
         font-size: $size-parrafos;
-        text-align: center;
     }
     div {
         .formulario__label {
@@ -249,9 +258,9 @@ body {
         .formulario__input {
             display: block;
             font-family: $tipografia;
-            margin: 5px;
-            width: 100%;
-            background: map-get($bg, card);
+            margin: 5px !important;
+            width: 75%;
+            background: linear-gradient(150deg, #FFFFFF 0%, #969696);
             font-size: $size-parrafos;
             border: solid 2px black;
         }
@@ -263,9 +272,9 @@ body {
             margin: 10px 25px;
             font-family: $tipografia;
             font-size: $size-parrafos;
-            background: map-get($bg, footer);
+            background: linear-gradient(135deg, #696969 10%, black);
             color: white;
-            border: $border-item 5px;
+            border: double 5px black;
             &:hover {
                 background-color: map-get($bg, card);
                 color: black;
