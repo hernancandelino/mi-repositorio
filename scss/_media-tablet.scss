@@ -92,13 +92,12 @@
     .envios__titulo {
         @include titulos-tablet;
     }
+    .envios__zona {
+        font-size: $size-titulos-celular;
+    }
     .envios {
-        .envios__zona {
-            font-size: $size-titulos-celular;
-        }
         .envios__precio {
             font-size: $size-parrafos-tablet;
-            text-align: center;
             .envios__contacto {
                 font-size: $size-parrafos-tablet;
             }

@@ -178,13 +178,16 @@ header {
         text-align: center;
         font-weight: $font-titulos;
         display: inline-block;
+        margin-top: 30px;
+        margin-bottom: 0 !important;
     }
 }
 .contacto {
     text-decoration: none;
     color: black;
     font-family: $tipografia;
-    margin: 20px;
+    display: block;
+    margin: 20px auto 0 auto;
     font-size: $size-parrafos;
     text-align: center;
     &:hover {

@@ -94,13 +94,14 @@
     .envios__titulo {
         @include titulos-celular;
     }
+    .envios__zona {
+        font-size: $size-parrafos;
+        margin: 25px 0 5px 10px;
+    }
     .envios {
-        .envios__zona {
-            font-size: $size-parrafos;
-        }
         .envios__precio {
             font-size: $size-parrafos-celular;
-            text-align: center;
+            margin-left: 5px;
             .envios__contacto {
                 font-size: $size-parrafos-celular;
             }

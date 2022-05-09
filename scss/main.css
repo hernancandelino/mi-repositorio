@@ -240,13 +240,16 @@ header .menu .menu__div .menu__lista ul li .menu__navegacion:hover {
   text-align: center;
   font-weight: 800;
   display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 0 !important;
 }
 
 .contacto {
   text-decoration: none;
   color: black;
   font-family: "Bangers", cursive;
-  margin: 20px;
+  display: block;
+  margin: 20px auto 0 auto;
   font-size: 25px;
   text-align: center;
 }
@@ -524,12 +527,11 @@ header .menu .menu__div .menu__lista ul li .menu__navegacion:hover {
     font-size: 36px;
     margin: 25px;
   }
-  .envios .envios__zona {
+  .envios__zona {
     font-size: 30px;
   }
   .envios .envios__precio {
     font-size: 20px;
-    text-align: center;
   }
   .envios .envios__precio .envios__contacto {
     font-size: 20px;
@@ -662,12 +664,13 @@ header .menu .menu__div .menu__lista ul li .menu__navegacion:hover {
     font-size: 30px;
     margin: 20px;
   }
-  .envios .envios__zona {
+  .envios__zona {
     font-size: 25px;
+    margin: 25px 0 5px 10px;
   }
   .envios .envios__precio {
     font-size: 17px;
-    text-align: center;
+    margin-left: 5px;
   }
   .envios .envios__precio .envios__contacto {
     font-size: 17px;
