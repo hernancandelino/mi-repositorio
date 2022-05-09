@@ -3,11 +3,7 @@
     /* encabezado */
     .menu {
         .menu__navegacion {
-            border: groove antiquewhite 3px;
             font-size: $size-parrafos-celular;
-            &:hover {
-                border: $border-item-hover 3px;
-            }
         }
     } 
     /* footer */
@@ -16,13 +12,13 @@
         padding: 7px;
         .footer__div {
             .footer__redes {
-                font-size: 10px;
+                font-size: 13px;
             }
         }
     }
     /* index */
     .article__titulo {
-        font-size: 45px;
+        font-size: 45px !important;
     }
     .article {
         display: block;
@@ -31,7 +27,7 @@
             width: 200px;
         }
         .article__texto {
-            margin: 7px auto;
+            margin: 15px auto;
             width: 275px !important;
             font-size: $size-parrafos-celular !important;
         }
@@ -61,13 +57,13 @@
         display: block;
         div {
             .quienessomos__imagen {
-                height: 300px;
-                width: 300px;
+                height: 275px;
+                width: 275px;
             }
             .quienessomos__parrafo {
                 width: 300px;
                 font-size: $size-parrafos-celular;
-                margin: 12px auto;
+                margin: 15px auto;
             }
         }
     }
@@ -81,10 +77,7 @@
         }
     }
     .contacto {
-        display: block;
-        margin: 30px 10px;
-        font-size: $size-parrafos-celular;
-        text-align: center;
+        display: none;
     }
     /* productos */
     .nuestrosproductos {
@@ -138,10 +131,6 @@
         .formulario__boton {
             padding: 6px !important;
             font-size: $size-parrafos-celular !important;
-            border: $border-item 3px !important;
-            &:hover {
-                border: $border-item-hover 3px !important;
-            }
         }
     }
     .ubicacion__titulo {
@@ -157,19 +146,6 @@
             margin: 15px auto;
             width: 275px;
             height: 275px;
-        }
-    }
-    .medios__titulo {
-        margin: $margin-titulos-celular;
-        font-size: $size-parrafos;
-    }
-    .medios {
-        .medios__redes {
-            font-size: $size-parrafos-celular;
-            img {
-                height: 22px;
-                width: 22px;
-            }
         }
     }
 }

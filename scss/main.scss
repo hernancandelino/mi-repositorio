@@ -44,12 +44,24 @@ body {
         background: map-get($bg, footer);
         .footer__redes {
             text-decoration: none;
-            font-size: $size-parrafos-tablet;
+            font-size: 17px;
             background: map-get($bg, footer);
             font-family: 'Permanent Marker', cursive;        
             color: white;
-            img {
-                margin: 7px 5px;
+            .icono-maps {
+                width: 20px;
+                height: 30px;
+                margin: 7px 7px;
+            }
+            .icono-wpp {
+                width: 20px;
+                height: 20px;
+                margin: 7px 7px;
+            }
+            .icono-insta {
+                width: 20px;
+                height: 20px;
+                margin: 7px 7px;
             }
         }
     }
@@ -59,29 +71,28 @@ body {
 .div-titulo {
     width: 50%;
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
     .article__titulo {
         text-align: center;
         font-family: 'Bangers', cursive;            
         font-size: 60px;
         font-weight: 1000;
-        margin: $margin-titulos;
     }
 }
 .article {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
+    display: flex;
     margin-top: 50px;
     margin-bottom: 100px;
+    justify-content: space-evenly;
         .article__imagen {
             display: block;
             margin: 0 auto;
-            width: 400px;
+            width: 384px;
         }
         div {
             align-self: center;
             .article__texto {
-                width: 350px;
+                width: 384px;
                 font-size: 30px;
                 font-family: 'Bangers', cursive;            
                 text-align: center;
@@ -91,7 +102,6 @@ body {
 }
 .section__title {
     @include titulos;
-    font-size: $size-titulos-tablet;
 }
 .section {
     display: block;
@@ -127,12 +137,12 @@ body {
         .quienessomos__imagen {
             display: block;
             margin: 0 auto;
-            height: 400px;
-            width: 350px;
+            height: 450px;
+            width: 384px;
         }
         .quienessomos__parrafo {
             font-family: 'Bangers', cursive;            
-            width: 400px;
+            width: 384px;
             font-size: $size-parrafos;
             text-align: center;
         }
@@ -276,7 +286,7 @@ body {
             color: white;
             border: double 5px black;
             &:hover {
-                background-color: map-get($bg, card);
+                background: white;
                 color: black;
                 border: $border-item-hover 5px;
             }
@@ -304,22 +314,6 @@ body {
         height: 600px;
     }
 }
-.medios__titulo {
-    @extend .contacto__titulo;
-    font-size: $size-titulos-tablet;
-}
-.medios {
-    margin: 10px;
-    .medios__redes {
-        font-family: $tipografia;
-        text-decoration: none;
-        color: black;
-        font-size: $size-parrafos;
-        img {
-            height: 30px;
-            width: 30px;
-        }
-    }
-}
+
 @import "media-tablet";
 @import "media-celular";

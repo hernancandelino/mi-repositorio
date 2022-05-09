@@ -54,21 +54,35 @@ body {
 
 .footer .footer__div .footer__redes {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 17px;
   background: black;
   font-family: 'Permanent Marker', cursive;
   color: white;
 }
 
-.footer .footer__div .footer__redes img {
-  margin: 7px 5px;
+.footer .footer__div .footer__redes .icono-maps {
+  width: 20px;
+  height: 30px;
+  margin: 7px 7px;
+}
+
+.footer .footer__div .footer__redes .icono-wpp {
+  width: 20px;
+  height: 20px;
+  margin: 7px 7px;
+}
+
+.footer .footer__div .footer__redes .icono-insta {
+  width: 20px;
+  height: 20px;
+  margin: 7px 7px;
 }
 
 /* inicio */
 .div-titulo {
   width: 50%;
   display: block;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .div-titulo .article__titulo {
@@ -76,22 +90,23 @@ body {
   font-family: 'Bangers', cursive;
   font-size: 60px;
   font-weight: 1000;
-  margin: 30px;
 }
 
 .article {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 3fr 2fr;
-      grid-template-columns: 3fr 2fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 50px;
   margin-bottom: 100px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .article .article__imagen {
   display: block;
   margin: 0 auto;
-  width: 400px;
+  width: 384px;
 }
 
 .article div {
@@ -101,7 +116,7 @@ body {
 }
 
 .article div .article__texto {
-  width: 350px;
+  width: 384px;
   font-size: 30px;
   font-family: 'Bangers', cursive;
   text-align: center;
@@ -110,10 +125,15 @@ body {
 
 .section__title {
   font-size: 45px;
-  margin: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
   font-weight: 800;
   font-family: "Bangers", cursive;
-  font-size: 36px;
 }
 
 .section {
@@ -143,7 +163,13 @@ body {
 /* quienes somos */
 .quienessomos__titulo, .valores__titulo {
   font-size: 45px;
-  margin: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
   font-weight: 800;
   font-family: "Bangers", cursive;
 }
@@ -166,13 +192,13 @@ body {
 .quienessomos div .quienessomos__imagen {
   display: block;
   margin: 0 auto;
-  height: 400px;
-  width: 350px;
+  height: 450px;
+  width: 384px;
 }
 
 .quienessomos div .quienessomos__parrafo {
   font-family: 'Bangers', cursive;
-  width: 400px;
+  width: 384px;
   font-size: 25px;
   text-align: center;
 }
@@ -214,7 +240,13 @@ body {
 /* productos */
 .nuestrosproductos {
   font-size: 45px;
-  margin: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
   font-weight: 800;
   font-family: "Bangers", cursive;
 }
@@ -266,7 +298,13 @@ body {
 /* envios */
 .envios__titulo {
   font-size: 45px;
-  margin: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
   font-weight: 800;
   font-family: "Bangers", cursive;
 }
@@ -304,9 +342,15 @@ body {
 }
 
 /* contacto */
-.contacto__titulo, .ubicacion__titulo, .medios__titulo {
+.contacto__titulo, .ubicacion__titulo {
   font-size: 45px;
-  margin: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
   font-weight: 800;
   font-family: "Bangers", cursive;
 }
@@ -352,7 +396,7 @@ body {
 }
 
 .formulario div .formulario__boton:hover {
-  background-color: #deb887d8;
+  background: white;
   color: black;
   border: groove #999 5px;
 }
@@ -378,47 +422,21 @@ body {
   height: 600px;
 }
 
-.medios__titulo {
-  font-size: 36px;
-}
-
-.medios {
-  margin: 10px;
-}
-
-.medios .medios__redes {
-  font-family: "Bangers", cursive;
-  text-decoration: none;
-  color: black;
-  font-size: 25px;
-}
-
-.medios .medios__redes img {
-  height: 30px;
-  width: 30px;
-}
-
 @media (min-width: 481px) and (max-width: 768px) {
   /* encabezado */
   .menu .menu__navegacion {
-    border: groove antiquewhite 5px;
     font-size: 20px;
-  }
-  .menu .menu__navegacion:hover {
-    background: white;
-    border: groove #999 5px;
   }
   /* footer */
   .footer {
-    margin: 25px 12px 12px 12px;
     padding: 7px;
   }
   .footer .footer__div .footer__redes {
-    font-size: 12px;
+    font-size: 15px;
   }
   /* index */
   .article__titulo {
-    font-size: 50px;
+    font-size: 50px !important;
   }
   .article {
     margin-top: 30px;
@@ -426,12 +444,11 @@ body {
     display: block;
   }
   .article .article__imagen {
-    width: 300px;
     height: 400px;
   }
   .article div .article__texto {
     font-size: 25px;
-    margin: 10px auto;
+    margin: 20px auto;
   }
   .section__title {
     font-size: 36px;
@@ -459,14 +476,9 @@ body {
   .quienessomos {
     display: block;
   }
-  .quienessomos div .quienessomos__imagen {
-    height: 400px;
-    width: 400px;
-  }
   .quienessomos div .quienessomos__parrafo {
-    width: 350px;
     font-size: 20px;
-    margin: 15px auto;
+    margin: 20px auto;
   }
   .valores__titulo {
     font-size: 30px;
@@ -511,7 +523,7 @@ body {
     height: 450px;
   }
   /* contacto */
-  .contacto__titulo, .ubicacion__titulo, .medios__titulo {
+  .contacto__titulo, .ubicacion__titulo {
     font-size: 36px;
     margin: 25px;
   }
@@ -527,10 +539,6 @@ body {
   .formulario div .formulario__boton {
     padding: 8px;
     font-size: 20px;
-    border: groove antiquewhite 4px;
-  }
-  .formulario div .formulario__boton:hover {
-    border: groove #999 4px;
   }
   .ubicacion__titulo {
     margin: 25px;
@@ -545,27 +553,12 @@ body {
     width: 450px;
     height: 450px;
   }
-  .medios__titulo {
-    margin: 25px;
-    font-size: 30px;
-  }
-  .medios .medios__redes {
-    font-size: 20px;
-  }
-  .medios .medios__redes img {
-    height: 25px;
-    width: 25px;
-  }
 }
 
 @media screen and (max-width: 480px) {
   /* encabezado */
   .menu .menu__navegacion {
-    border: groove antiquewhite 3px;
     font-size: 17px;
-  }
-  .menu .menu__navegacion:hover {
-    border: groove #999 3px;
   }
   /* footer */
   .footer {
@@ -573,11 +566,11 @@ body {
     padding: 7px;
   }
   .footer .footer__div .footer__redes {
-    font-size: 10px;
+    font-size: 13px;
   }
   /* index */
   .article__titulo {
-    font-size: 45px;
+    font-size: 45px !important;
   }
   .article {
     display: block;
@@ -587,7 +580,7 @@ body {
     width: 200px;
   }
   .article .article__texto {
-    margin: 7px auto;
+    margin: 15px auto;
     width: 275px !important;
     font-size: 17px !important;
   }
@@ -618,13 +611,13 @@ body {
     display: block;
   }
   .quienessomos div .quienessomos__imagen {
-    height: 300px;
-    width: 300px;
+    height: 275px;
+    width: 275px;
   }
   .quienessomos div .quienessomos__parrafo {
     width: 300px;
     font-size: 17px;
-    margin: 12px auto;
+    margin: 15px auto;
   }
   .valores__titulo {
     margin: 20px;
@@ -634,10 +627,7 @@ body {
     font-size: 17px;
   }
   .contacto {
-    display: block;
-    margin: 30px 10px;
-    font-size: 17px;
-    text-align: center;
+    display: none;
   }
   /* productos */
   .nuestrosproductos {
@@ -672,7 +662,7 @@ body {
     height: 275px;
   }
   /* contacto */
-  .contacto__titulo, .ubicacion__titulo, .medios__titulo {
+  .contacto__titulo, .ubicacion__titulo {
     font-size: 30px;
     margin: 20px;
   }
@@ -689,10 +679,6 @@ body {
   .formulario .formulario__boton {
     padding: 6px !important;
     font-size: 17px !important;
-    border: groove antiquewhite 3px !important;
-  }
-  .formulario .formulario__boton:hover {
-    border: groove #999 3px !important;
   }
   .ubicacion__titulo {
     margin: 20px;
@@ -706,17 +692,6 @@ body {
     margin: 15px auto;
     width: 275px;
     height: 275px;
-  }
-  .medios__titulo {
-    margin: 20px;
-    font-size: 25px;
-  }
-  .medios .medios__redes {
-    font-size: 17px;
-  }
-  .medios .medios__redes img {
-    height: 22px;
-    width: 22px;
   }
 }
 /*# sourceMappingURL=main.css.map */

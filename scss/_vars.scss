@@ -1,8 +1,7 @@
-$border-item: groove antiquewhite;
 $border-item-hover: groove #999;
 $tipografia: 'Bangers', cursive;            
 $font-titulos: 800;
-$margin-titulos: 30px;
+$margin-titulos: 20px 0;
 $margin-titulos-tablet: 25px;
 $margin-titulos-celular: 20px;
 $size-parrafos: 25px;
@@ -13,6 +12,8 @@ $size-titulos-tablet: 36px;
 $size-titulos-celular: 30px;
 @mixin titulos {
     font-size: $size-titulos;
+    display: flex;
+    justify-content: center;
     margin: $margin-titulos;
     font-weight: $font-titulos;
     font-family: $tipografia;
@@ -27,7 +28,5 @@ $size-titulos-celular: 30px;
 }
 $bg: (
     hover: white,
-    menu: #b3ad08ee,
     footer: black,
-    card: #deb887d8,
 );
