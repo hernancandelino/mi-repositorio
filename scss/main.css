@@ -9,14 +9,32 @@ body {
 }
 
 /* encabezado */
-.encabezado {
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+
+header .encabezado {
   padding: 0px;
   font-family: 'Permanent Marker', cursive;
   background: black !important;
 }
 
-.menu {
-  width: 100%;
+header .menu {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #696969), to(black));
+  background: linear-gradient(0deg, #696969 20%, black);
+  padding: 0px;
+}
+
+header .menu .menu__div {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #696969), to(black));
+  background: linear-gradient(0deg, #696969 20%, black);
+  padding: 0px;
+}
+
+header .menu .menu__div .menu__lista {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #696969), to(black));
   background: linear-gradient(0deg, #696969 20%, black);
   padding: 0px;
@@ -24,7 +42,7 @@ body {
       justify-content: space-around;
 }
 
-.menu .menu__navegacion {
+header .menu .menu__div .menu__lista ul li .menu__navegacion {
   padding: 10px;
   text-decoration: none;
   color: white !important;
@@ -36,7 +54,7 @@ body {
   font-size: 25px;
 }
 
-.menu .menu__navegacion:hover {
+header .menu .menu__div .menu__lista ul li .menu__navegacion:hover {
   background: white;
   color: black !important;
 }
@@ -425,7 +443,7 @@ body {
 @media (min-width: 481px) and (max-width: 768px) {
   /* encabezado */
   .menu .menu__navegacion {
-    font-size: 20px;
+    font-size: 20px !important;
   }
   /* footer */
   .footer {
@@ -558,11 +576,10 @@ body {
 @media screen and (max-width: 480px) {
   /* encabezado */
   .menu .menu__navegacion {
-    font-size: 17px;
+    font-size: 17px !important;
   }
   /* footer */
   .footer {
-    margin: 25px 10px 10px 10px;
     padding: 7px;
   }
   .footer .footer__div .footer__redes {

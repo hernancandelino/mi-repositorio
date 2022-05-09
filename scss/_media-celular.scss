@@ -3,12 +3,11 @@
     /* encabezado */
     .menu {
         .menu__navegacion {
-            font-size: $size-parrafos-celular;
+            font-size: $size-parrafos-celular !important;
         }
     } 
     /* footer */
     .footer {
-        margin: 25px 10px 10px 10px;
         padding: 7px;
         .footer__div {
             .footer__redes {

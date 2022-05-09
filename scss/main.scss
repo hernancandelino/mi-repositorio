@@ -9,28 +9,44 @@ body {
 }   
 
 /* encabezado */
-.encabezado {
-    padding: 0px;
-    font-family: 'Permanent Marker', cursive;    
-    background: black !important;
-}
-.menu {
-    width: 100%;
-    background: linear-gradient(0deg, #696969 20%, black);
-    padding: 0px;
-    justify-content: space-around;
-    .menu__navegacion {
-        padding: 10px;
-        text-decoration: none;
-        color: white !important;
-        border: double 5px black;
-        font-family: 'Permanent Marker', cursive;        
-        background: linear-gradient(360deg, #696969 10%, black);
-        width: 100%;
-        font-size: $size-parrafos;
-        &:hover {
-            background: map-get($bg, hover);
-            color: black !important;
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    .encabezado {
+        padding: 0px;
+        font-family: 'Permanent Marker', cursive;    
+        background: black !important;
+    }
+    .menu {
+        background: linear-gradient(0deg, #696969 20%, black);
+        padding: 0px;
+        .menu__div {
+            background: linear-gradient(0deg, #696969 20%, black);
+            padding: 0px;
+            .menu__lista {
+                background: linear-gradient(0deg, #696969 20%, black);
+                padding: 0px;
+                justify-content: space-around;
+                ul {
+                    li {
+                        .menu__navegacion {
+                            padding: 10px;
+                            text-decoration: none;
+                            color: white !important;
+                            border: double 5px black;
+                            font-family: 'Permanent Marker', cursive;        
+                            background: linear-gradient(360deg, #696969 10%, black);
+                            width: 100%;
+                            font-size: $size-parrafos;
+                            &:hover {
+                                background: map-get($bg, hover);
+                                color: black !important;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
