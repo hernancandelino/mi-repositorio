@@ -231,6 +231,9 @@ header .menu .menu__div .menu__lista ul li .menu__navegacion:hover {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .valores-div .valores {
