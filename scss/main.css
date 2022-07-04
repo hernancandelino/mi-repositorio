@@ -8,6 +8,38 @@ body {
   background: linear-gradient(115deg, #969696 45%, #FFFFFF);
 }
 
+h1 {
+  font-size: 65px;
+  font-family: 'Bangers', cursive;
+}
+
+h2 {
+  font-family: 'Bangers', cursive;
+  font-size: 50px;
+}
+
+h4 {
+  font-family: 'Bangers', cursive;
+  font-size: 35px;
+}
+
+h6 {
+  font-family: 'Bangers', cursive;
+  font-size: 27px;
+}
+
+p {
+  font-family: 'Bangers', cursive;
+  font-size: 20px;
+}
+
+a {
+  font-family: 'Bangers', cursive;
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+}
+
 /* encabezado */
 header {
   position: -webkit-sticky;
@@ -19,24 +51,24 @@ header {
 header .encabezado {
   padding: 0px;
   font-family: 'Permanent Marker', cursive;
-  background: black !important;
+  background: #000000 !important;
 }
 
 header .menu {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #696969), to(black));
-  background: linear-gradient(0deg, #696969 20%, black);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #696969), to(#000000));
+  background: linear-gradient(0deg, #696969 20%, #000000);
   padding: 0px;
 }
 
 header .menu .menu__div {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #696969), to(black));
-  background: linear-gradient(0deg, #696969 20%, black);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #696969), to(#000000));
+  background: linear-gradient(0deg, #696969 20%, #000000);
   padding: 0px;
 }
 
 header .menu .menu__div .menu__lista {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #696969), to(black));
-  background: linear-gradient(0deg, #696969 20%, black);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #696969), to(#000000));
+  background: linear-gradient(0deg, #696969 20%, #000000);
   padding: 0px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -44,38 +76,34 @@ header .menu .menu__div .menu__lista {
 
 header .menu .menu__div .menu__lista ul li .menu__navegacion {
   padding: 10px;
-  text-decoration: none;
-  color: white !important;
-  border: double 5px black;
+  color: #ffffff !important;
+  border: double 5px #000000;
   font-family: 'Permanent Marker', cursive;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #696969), to(black));
-  background: linear-gradient(360deg, #696969 10%, black);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #696969), to(#000000));
+  background: linear-gradient(360deg, #696969 10%, #000000);
   width: 100%;
-  font-size: 25px;
 }
 
 header .menu .menu__div .menu__lista ul li .menu__navegacion:hover {
-  background: white;
-  color: black !important;
+  background: #ffffff;
+  color: #000000 !important;
 }
 
 /* footer */
 .footer {
   margin-top: 45px;
   padding: 10px;
-  background: black;
+  background: #000000;
 }
 
 .footer .footer__div {
-  background: black;
+  background: #000000;
 }
 
 .footer .footer__div .footer__redes {
-  text-decoration: none;
-  font-size: 17px;
-  background: black;
+  background: #000000;
   font-family: 'Permanent Marker', cursive;
-  color: white;
+  color: #ffffff;
 }
 
 .footer .footer__div .footer__redes .icono-maps {
@@ -105,8 +133,6 @@ header .menu .menu__div .menu__lista ul li .menu__navegacion:hover {
 
 .div-titulo .article__titulo {
   text-align: center;
-  font-family: 'Bangers', cursive;
-  font-size: 60px;
   font-weight: 1000;
 }
 
@@ -135,8 +161,6 @@ header .menu .menu__div .menu__lista ul li .menu__navegacion:hover {
 
 .article div .article__texto {
   width: 384px;
-  font-size: 30px;
-  font-family: 'Bangers', cursive;
   text-align: center;
   display: block;
 }

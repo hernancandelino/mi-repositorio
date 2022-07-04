@@ -6,6 +6,32 @@
 }
 body {
     background: linear-gradient(115deg, #969696 45%, #FFFFFF);
+}
+h1 {
+    font-size: 65px;
+    font-family: 'Bangers', cursive;
+}
+h2 {
+    font-family: 'Bangers', cursive;
+    font-size: 50px;
+}
+h4 {
+    font-family: 'Bangers', cursive;
+    font-size: 35px;    
+}
+h6 {
+    font-family: 'Bangers', cursive;
+    font-size: 27px;    
+}
+p {
+    font-family: 'Bangers', cursive;
+    font-size: 20px;    
+}
+a {
+    font-family: 'Bangers', cursive;
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;    
 }   
 
 /* encabezado */
@@ -16,32 +42,30 @@ header {
     .encabezado {
         padding: 0px;
         font-family: 'Permanent Marker', cursive;    
-        background: black !important;
+        background: #000000 !important;
     }
     .menu {
-        background: linear-gradient(0deg, #696969 20%, black);
+        background: linear-gradient(0deg, #696969 20%, #000000);
         padding: 0px;
         .menu__div {
-            background: linear-gradient(0deg, #696969 20%, black);
+            background: linear-gradient(0deg, #696969 20%, #000000);
             padding: 0px;
             .menu__lista {
-                background: linear-gradient(0deg, #696969 20%, black);
+                background: linear-gradient(0deg, #696969 20%, #000000);
                 padding: 0px;
                 justify-content: space-around;
                 ul {
                     li {
                         .menu__navegacion {
                             padding: 10px;
-                            text-decoration: none;
-                            color: white !important;
-                            border: double 5px black;
+                            color: #ffffff !important;
+                            border: double 5px #000000;
                             font-family: 'Permanent Marker', cursive;        
-                            background: linear-gradient(360deg, #696969 10%, black);
+                            background: linear-gradient(360deg, #696969 10%, #000000);
                             width: 100%;
-                            font-size: $size-parrafos;
                             &:hover {
-                                background: map-get($bg, hover);
-                                color: black !important;
+                                background: #ffffff;
+                                color: #000000 !important;
                             }
                         }
                     }
@@ -55,15 +79,13 @@ header {
 .footer {
     margin-top: 45px;
     padding: 10px;
-    background: map-get($bg, footer);
+    background: #000000;
     .footer__div {
-        background: map-get($bg, footer);
+        background: #000000;
         .footer__redes {
-            text-decoration: none;
-            font-size: 17px;
-            background: map-get($bg, footer);
+            background: #000000;
             font-family: 'Permanent Marker', cursive;        
-            color: white;
+            color: #ffffff;
             .icono-maps {
                 width: 20px;
                 height: 30px;
@@ -90,8 +112,6 @@ header {
     margin: 20px auto;
     .article__titulo {
         text-align: center;
-        font-family: 'Bangers', cursive;            
-        font-size: 60px;
         font-weight: 1000;
     }
 }
@@ -108,9 +128,7 @@ header {
         div {
             align-self: center;
             .article__texto {
-                width: 384px;
-                font-size: 30px;
-                font-family: 'Bangers', cursive;            
+                width: 384px;          
                 text-align: center;
                 display: block;
             }
