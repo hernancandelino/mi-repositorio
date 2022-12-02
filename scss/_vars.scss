@@ -1,32 +1,88 @@
 $border-item-hover: groove #999;
-$tipografia: 'Bangers', cursive;            
+$tipografia: 'Bangers', cursive;   
+$tipografia-importante: 'Permanent Marker', cursive;
 $font-titulos: 800;
-$margin-titulos: 20px 0;
-$margin-titulos-tablet: 25px;
-$margin-titulos-celular: 20px;
-$size-parrafos: 25px;
-$size-parrafos-tablet: 20px;
-$size-parrafos-celular: 17px;
-$size-titulos: 45px;
-$size-titulos-tablet: 36px;
-$size-titulos-celular: 30px;
-@mixin titulos {
-    font-size: $size-titulos;
-    display: flex;
-    justify-content: center;
-    margin: $margin-titulos;
+$font-subtitulos: 500;
+$margin-titulos: 20px;
+$margin-titulos-tablet: 15px;
+$margin-titulos-celular: 10px;
+$size-h1: 67px;
+$size-h2: 50px;
+$size-h3: 42px;
+$size-h4: 35px;
+$size-h5: 30px;
+$size-h6: 27px;
+$size-p: 20px;
+$size-li: 20px;
+$size-a: 20px;
+$size-h1-medio: 50px; 
+$size-h2-medio: 42px; 
+$size-h3-medio: 35px; 
+$size-h4-medio: 30px; 
+$size-h5-medio: 27px; 
+$size-h6-medio: 24px; 
+$size-p-medio: 16px; 
+$size-li-medio: 16px; 
+$size-a-medio: 16px; 
+$size-h1-tablet: 55px; 
+$size-h2-tablet: 35px; 
+$size-h3-tablet: 30px; 
+$size-h4-tablet: 26px; 
+$size-h5-tablet: 24px; 
+$size-h6-tablet: 22px; 
+$size-li-tablet: 14px; 
+$size-p-tablet: 14px; 
+$size-a-tablet: 14px; 
+$size-h1-celular: 29px;
+$size-h2-celular: 28px;
+$size-h3-celular: 25px;
+$size-h4-celular: 22px;
+$size-h5-celular: 19px;
+$size-h6-celular: 16px;
+$size-li-celular: 12px;
+$size-p-celular: 12px;
+$size-a-celular: 12px;
+@mixin h1 {
+    font-size: $size-h1;
+    font-family: $tipografia;
     font-weight: $font-titulos;
+    text-align: center;
+    width: 50%;
+}
+@mixin h2 {
+    font-size: $size-h2;
+    font-family: $tipografia;
+    font-weight: $font-titulos;
+}
+@mixin h3 {
+    font-size: $size-h3;
+    font-family: $tipografia;
+    font-weight: $font-titulos;
+}
+@mixin h4 {
+    font-size: $size-h4;
+    font-family: $tipografia;
+    font-weight: $font-subtitulos;
+}
+@mixin h5 {
+    font-size: $size-h5;
+    font-family: $tipografia;
+    font-weight: $font-subtitulos;
+}
+@mixin h6 {
+    font-size: $size-h6;
+    font-family: $tipografia;
+    font-weight: $font-subtitulos;
+}
+@mixin p {
+    font-size: $size-p;
     font-family: $tipografia;
 }
-@mixin titulos-tablet {
-    font-size: $size-titulos-tablet;
-    margin: $margin-titulos-tablet;
+@mixin li {
+    font-size: $size-li;
+    font-family: $tipografia;
 }
-@mixin titulos-celular {
-    font-size: $size-titulos-celular;
-    margin: $margin-titulos-celular;
+@mixin a {
+    font-size: $size-a;
+    font-family: $tipografia;
 }
-$bg: (
-    hover: white,
-    footer: black,
-);

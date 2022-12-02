@@ -28,9 +28,9 @@
 <header>
   <div class="encabezado navbar navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html">
+      <a class="navbar-brand" href="./index.html">
         <img src="../img/img-logo.jpg" alt="img-logo" width="40" height="33" class="d-inline-block align-text-top">
-        Mueblería San Sossio
+        <p>Mueblería San Sossio</p>
       </a>
     </div>
   </div>
@@ -66,42 +66,37 @@
     <h2 class="contacto__titulo">Contacto</h2>
 </div>
 
-<section>
-    <div>
-        <form class="formulario" action="#">
-            <h4 class="formulario__legend">Para cualquier duda o consulta completar este formulario:</h4>
-            <div>
-              <label class="formulario__label" for="nombre"> Nombre y Apellido</label>
-              <input class="formulario__input" type="text" name="nombre" placeholder="Ingrese su nombre" required>
-            </div>
-            <div>
-              <label class="formulario__label" for="email">Email</label>
-              <input class="formulario__input" type="email" name="email" placeholder="Ingrese su email" required>
-            </div>
-            <div>
-              <label class="formulario__label" for="tel">Teléfono</label>
-              <input class="formulario__input" type="number" name="tel" placeholder="Ingrese su teléfono" required>
-            </div>
-            <div>
-              <label class="formulario__label" for="comentario"> Comentario</label>
-              <textarea class="formulario__input" name="comentario" placeholder="Escriba su comentario"></textarea>
-            </div>
-            <div>
-              <input class="formulario__boton" type="submit" value="Enviar">
-              <input class="formulario__boton" type="reset" value="Reiniciar">
-            </div>
-        </form>
-    </div>
-</section>
+<form action="#">
+  <h5 class="formulario__legend">Para cualquier duda o consulta completar este formulario:</h5>
+  <div class="formulario">
+    <label class="formulario__label" for="nombre"> Nombre y Apellido</label>
+    <input class="formulario__input" type="text" name="nombre" placeholder="Ingrese su nombre" required>
+  </div>
+  <div class="formulario">
+    <label class="formulario__label" for="email">Email</label>
+    <input class="formulario__input" type="email" name="email" placeholder="Ingrese su email" required>
+  </div>
+  <div class="formulario">
+    <label class="formulario__label" for="tel">Teléfono</label>
+    <input class="formulario__input" type="number" name="tel" placeholder="Ingrese su teléfono" required>
+  </div>
+  <div class="formulario">
+    <label class="formulario__label" for="comentario"> Comentario</label>
+    <textarea class="formulario__input" name="comentario" placeholder="Escriba su comentario"></textarea>
+  </div>
+  <div class="formulario">
+    <input class="formulario__boton" type="submit" value="Enviar">
+    <input class="formulario__boton" type="reset" value="Reiniciar">
+  </div>
+</form>
 
-<section>
-    <div class="ubicacion">
-        <h4 class="ubicacion__titulo">Ubicación</h4>
-        <iframe class="ubicacion__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.496830475668!2d-58.498443484767904!3d-34.692646680436596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccecd761f98dd%3A0x822c73ebf47230f7!2sDomingo%20Millan%2C%20Villa%20Madero%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1646877374527!5m2!1ses-419!2sar" width="500" height="400" style="border:2;" loading="lazy"></iframe>
-    </div>
-    <div class="ubicacion">
-        <a class="ubicacion__direccion" href="https://goo.gl/maps/d7MNxX37tdLNaNLy9" target="_blank"> Domingo Millán, La Matanza</a>
-    </div>
+<div>
+  <h4 class="ubicacion__titulo">Ubicación</h4>
+</div>
+
+<section class="ubicacion">
+  <iframe class="ubicacion__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.496830475668!2d-58.498443484767904!3d-34.692646680436596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccecd761f98dd%3A0x822c73ebf47230f7!2sDomingo%20Millan%2C%20Villa%20Madero%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1646877374527!5m2!1ses-419!2sar" width="500" height="400" style="border:2;" loading="lazy"></iframe>
+  <a class="ubicacion__direccion" href="https://goo.gl/maps/d7MNxX37tdLNaNLy9" target="_blank"> Domingo Millán, La Matanza</a>
 </section>
 
 <footer class="footer">

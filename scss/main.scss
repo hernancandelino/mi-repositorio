@@ -4,36 +4,10 @@
     margin: 0%;
     padding: 0%;
 }
+
 body {
     background: linear-gradient(115deg, #969696 45%, #FFFFFF);
 }
-h1 {
-    font-size: 65px;
-    font-family: 'Bangers', cursive;
-}
-h2 {
-    font-family: 'Bangers', cursive;
-    font-size: 50px;
-}
-h4 {
-    font-family: 'Bangers', cursive;
-    font-size: 35px;    
-}
-h6 {
-    font-family: 'Bangers', cursive;
-    font-size: 27px;    
-}
-p {
-    font-family: 'Bangers', cursive;
-    font-size: 20px;    
-}
-a {
-    font-family: 'Bangers', cursive;
-    font-size: 20px;
-    color: #000000;
-    text-decoration: none;    
-}   
-
 /* encabezado */
 header {
     position: sticky;
@@ -41,8 +15,18 @@ header {
     z-index: 2;
     .encabezado {
         padding: 0px;
-        font-family: 'Permanent Marker', cursive;    
         background: #000000 !important;
+        .container-fluid {
+            .navbar-brand {
+                display: flex;
+                align-items: center;
+                @include p;
+                font-family: $tipografia-importante;  
+                p {
+                    margin: 0 5px;
+                }  
+            }
+        }
     }
     .menu {
         background: linear-gradient(0deg, #696969 20%, #000000);
@@ -57,15 +41,16 @@ header {
                 ul {
                     li {
                         .menu__navegacion {
+                            @include a;
                             padding: 10px;
-                            color: #ffffff !important;
+                            color: #ffffff;
                             border: double 5px #000000;
-                            font-family: 'Permanent Marker', cursive;        
+                            font-family: $tipografia-importante;        
                             background: linear-gradient(360deg, #696969 10%, #000000);
                             width: 100%;
                             &:hover {
                                 background: #ffffff;
-                                color: #000000 !important;
+                                color: #000000;
                             }
                         }
                     }
@@ -83,20 +68,12 @@ header {
     .footer__div {
         background: #000000;
         .footer__redes {
+            @include a;
             background: #000000;
             font-family: 'Permanent Marker', cursive;        
             color: #ffffff;
-            .icono-maps {
-                width: 20px;
-                height: 30px;
-                margin: 7px 7px;
-            }
-            .icono-wpp {
-                width: 20px;
-                height: 20px;
-                margin: 7px 7px;
-            }
-            .icono-insta {
+            text-decoration: none;
+            img {
                 width: 20px;
                 height: 20px;
                 margin: 7px 7px;
@@ -106,108 +83,106 @@ header {
 }
 
 /* inicio */
-.div-titulo {
-    width: 50%;
-    display: block;
-    margin: 20px auto;
-    .article__titulo {
-        text-align: center;
-        font-weight: 1000;
-    }
-}
-.article {
+.presentacion {
     display: flex;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    justify-content: space-evenly;
-        .article__imagen {
-            display: block;
-            margin: 0 auto;
-            width: 384px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    .presentacion__titulo {
+        @include h1;
+    }
+    .presentacion__contenido {
+        display: flex;
+        margin: 25px 0;
+        justify-content: space-around;
+        .contenido__imagen {
+            width: 33%;
         }
-        div {
-            align-self: center;
-            .article__texto {
-                width: 384px;          
-                text-align: center;
-                display: block;
-            }
-        }
-}
-.section__title {
-    @include titulos;
-}
-.section {
-    display: block;
-    width: 700px;
-    height: 700px;
-    margin: 0 auto;
-    .carousel-item {
-        height: 700px;
-        width: 700px;
-        .carousel-caption {
-            h5 {
-                font-family: 'Bangers', cursive;            
+        .contenido__texto {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 33%;          
+            p {
+                @include h6;
             }
         }
     }
 }
-.carousel-control-prev {
+.carrusel {
+    display: block;
+    margin: auto;
     width: 50%;
-}
-.carousel-control-next {
-    width: 50%;
+    .carrusel__title {
+        margin: 25px 0;
+        @include h3;
+        text-align: center
+    }
+    #carouselExampleCaptions {
+        .carousel-inner {
+            .carousel-item {
+                .carousel-caption {
+                    h5 {
+                        @include h5;
+                    }
+                }
+            }
+        }
+    }
 }
 /* quienes somos */
-.quienessomos__titulo {
-    @include titulos;
-}
 .quienessomos {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    animation-duration: 1s;
-    div {
-        align-self: center;
+    display: flex;
+    flex-direction: column;
+    .quienessomos__titulo {
+        @include h2;
+        margin: 15px;
+    }
+    .quienessomos-contenido {
+        margin: 15px 0;
+        display: flex;
+        animation-duration: 1s;
+        justify-content: space-around;
+        align-items: center;
         .quienessomos__imagen {
-            display: block;
-            margin: 0 auto;
-            height: 450px;
-            width: 384px;
+            width: 40%;
+            img {
+                width: 100%;
+            }
         }
         .quienessomos__parrafo {
-            font-family: 'Bangers', cursive;            
-            width: 384px;
-            font-size: $size-parrafos;
-            text-align: center;
+            width: 33%;
+            p {
+                @include p;
+            }
         }
     }
 }
-.valores__titulo {
-    @extend .quienessomos__titulo;
-    font-size: $size-titulos-tablet;
-}
-.valores-div {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    .valores {
-        font-family: $tipografia;
-        font-size: $size-parrafos;
-        width: 40%;
-        text-align: center;
-        font-weight: $font-titulos;
-        display: inline-block;
-        margin-top: 30px;
-        margin-bottom: 0 !important;
+.valores {
+    .valores__titulo {
+        @include h3;
+        margin: 15px;
     }
+    .valores-div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .valores {
+            @include h5;
+            width: 33%;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 0 !important;
+        }
+    }
+
 }
 .contacto {
+    @include a;
     text-decoration: none;
     color: black;
-    font-family: $tipografia;
     display: block;
     margin: 20px auto 0 auto;
-    font-size: $size-parrafos;
     text-align: center;
     &:hover {
         color: white;
@@ -216,14 +191,15 @@ header {
 
 /* productos */
 .nuestrosproductos {
-    @include titulos;
+    @include h2;
+    margin: 15px;
 }
 .row {
     justify-content: space-evenly;
     width: 100%;
     .col {
         padding: 0%;
-        width: 35%;
+        width: 40%;
         margin: 10px 0;
         .card {
             background: linear-gradient(320deg, #969696 45%, #FFFFFF);
@@ -234,11 +210,12 @@ header {
                 align-self: center;
                 padding: 15px 10px;
             }
-            .card-title {
-                font-family: $tipografia;
-                font-size: $size-parrafos;
-                text-align: center;
-                font-weight: $font-titulos;
+            .card-body {
+                .card-title {
+                    @include h6;
+                    text-align: center;
+                    width: 100%;
+                }
             }
         }
     }
@@ -254,72 +231,67 @@ header {
 
 /* envios */
 .envios__titulo {
-    @include titulos;
-}
-.envios__zona {
-    font-family: $tipografia;
-    font-size: $size-titulos-tablet;
-    margin: 15px;
-    font-weight: $font-titulos;
+    @include h2;
+    margin: 20px;
 }
 .envios {
-    .envios__precio {
-        font-family: $tipografia;
-        font-size: $size-parrafos;
-        margin-left: 5px;
+    .envios__zona {
+        @include h3;
+        margin: 15px;
+    }
+    .envios__informacion {
+        .envios__precio {
+            @include p;
+            margin: 5px;
+        }
+        .envios__iframe {
+            border: solid 5px black;
+            display: block;
+            margin: 25px auto;
+            width: 66%;
+            height: 500px;
+        }
         .envios__contacto {
             text-decoration: none;
-            color: black;
-            font-family: $tipografia;
-            font-size: $size-parrafos;
+            color: #000000;
             &:hover {
-                color: white;
+                color: #ffffff;
             }
         }
-    }
-    .envios__iframe {
-        border: solid 5px black;
-        display: block;
-        margin: 25px auto;
-        width: 700px;
-        height: 600px;
     }
 }
 
 /* contacto */
 .contacto__titulo {
-    @include titulos;
+    @include h2;
+    margin: 15px;
 }
-.formulario {
+form {
     margin: 10px auto;
     width: 95%;
     .formulario__legend {
-        font-family: $tipografia;
-        font-size: $size-parrafos;
+        @include h5;
     }
-    div {
+    .formulario {
         .formulario__label {
-            font-family: $tipografia;
+            @include h6;
             margin: 5px;
-            font-size: $size-parrafos;
         }
         .formulario__input {
+            @include h6;
             display: block;
-            font-family: $tipografia;
             margin: 5px !important;
             width: 75%;
             background: linear-gradient(150deg, #FFFFFF 0%, #969696);
-            font-size: $size-parrafos;
             border: solid 2px black;
         }
         textarea {
-            height: 107px;
+            height: 100px;
         }
         .formulario__boton {
+            @include h6;
             padding: 7px;
             margin: 10px 25px;
-            font-family: $tipografia;
-            font-size: $size-parrafos;
             background: linear-gradient(135deg, #696969 10%, black);
             color: white;
             border: double 5px black;
@@ -332,26 +304,536 @@ header {
     }
 }
 .ubicacion__titulo {
-    @extend .contacto__titulo;
-    font-size: $size-titulos-tablet;
+    @include h3;
+    margin: 15px;
 }
 .ubicacion {
     .ubicacion__direccion {
+        @include h6;
         display: block;
-        font-family: $tipografia;
         text-decoration: none;
         color: black;
         text-align: center;
-        font-size: $size-parrafos;
+        &:hover {
+            color: #FFFFFF;
+        }
     }
     .ubicacion__iframe {
         border: solid 5px black;
         display: block;
         margin: 25px auto;
-        width: 700px;
-        height: 600px;
+        width: 66%;
+        height: 500px;
     }
 }
-
-@import "media-tablet";
-@import "media-celular";
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* encabezado */
+    header {
+        .encabezado {
+            .container-fluid {
+                .navbar-brand {
+                    font-size: $size-p-medio;
+                }
+            }
+        }
+    }
+    .menu {
+        .menu__navegacion {
+            font-size: $size-a-medio !important;
+        }
+    }
+    /* footer */
+    .footer {
+    padding: 7px;
+        .footer__div {
+            .footer__redes {
+                font-size: $size-a-medio;
+            }
+        }
+    }   
+    /* inicio */
+    .presentacion {
+        .presentacion__titulo {
+            font-size: $size-h1-medio;
+        }
+        .presentacion__contenido {
+            .contenido__texto {
+                p {
+                    font-size: $size-h6-medio;
+                }
+            }
+        }
+    }
+    .carrusel {
+        .carrusel__title {
+            font-size: $size-h3-medio;
+            text-align: center;
+        }
+        #carouselExampleCaptions {
+            .carousel-inner {
+                .carousel-item {
+                    .carousel-caption {
+                        h5 {
+                            font-size: $size-h5-medio;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* quienes somos */
+    .quienessomos {
+        .quienessomos__titulo {
+            font-size: $size-h2-medio;
+        }
+        .quienessomos-contenido {
+            .quienessomos__parrafo {
+                p {
+                    font-size: $size-p-medio
+                }
+            }
+        }
+    }
+    .valores {
+        .valores__titulo {
+            font-size: $size-h3-medio;
+        }
+        .valores-div {
+            .valores {
+                font-size: $size-h5-medio;
+                width: 40%;
+            }
+        }
+    }
+    .contacto {
+        font-size: $size-a-medio;
+    }
+    /* productos */
+    .nuestrosproductos {
+        font-size: $size-h2-medio;
+    }
+    .row {
+        .col {
+            .card {
+                .card-body {
+                    .card-title {
+                        font-size: $size-h6-medio;
+                    }
+                }
+            }
+        }
+    }
+    /* envios */
+    .envios__titulo {
+        font-size: $size-h2-medio;
+    }
+    .envios {
+        .envios__zona {
+            font-size: $size-h3-medio;
+        }
+        .envios__informacion {
+            .envios__precio {
+                font-size: $size-p-medio;
+            }
+            .envios__iframe {
+                height: 400px;
+            }
+        }
+    }
+    /* contacto */
+    .contacto__titulo {
+        font-size: $size-h2-medio;
+    }
+    form {
+        .formulario__legend {
+            font-size: $size-h5-medio;
+        }
+        .formulario {
+            .formulario__label {
+                font-size: $size-h6-medio;
+            }
+            .formulario__input {
+            font-size: $size-h6-medio;
+            }
+            .formulario__boton {
+                font-size: $size-h6-medio;
+            }
+        }
+    }
+    .ubicacion__titulo {
+        font-size: $size-h3-medio;
+    }
+    .ubicacion {
+        .ubicacion__direccion {
+            font-size: $size-h6-medio;
+        }
+        .ubicacion__iframe {
+        height: 400px;
+        }
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    header {
+        .encabezado {
+            .container-fluid {
+                .navbar-brand {
+                    p {
+                        font-size: $size-p-tablet;
+                    }  
+                }
+            }
+        }
+        .menu {
+            .menu__div {
+                .menu__lista {
+                    ul {
+                        li {
+                            .menu__navegacion {
+                                font-size: $size-p-tablet;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    /* footer */
+    .footer {
+        .footer__div {
+            .footer__redes {
+                font-size: $size-a-tablet;
+            }
+        }
+    }
+    
+    /* inicio */
+    .presentacion {
+        .presentacion__titulo {
+            font-size: $size-h1-tablet;
+        }
+        .presentacion__contenido {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .contenido__imagen {
+                width: 50%;
+            }
+            .contenido__texto {
+                align-items: center;
+                text-align: justify;
+                width: 50%; 
+                margin: 15px 0 0 0;         
+                p {
+                    font-size: $size-h6-tablet;
+                }
+            }
+        }
+    }
+    .carrusel {
+        width: 66%;
+        .carrusel__title {
+            font-size: $size-h3-tablet;
+        }
+        #carouselExampleCaptions {
+            .carousel-inner {
+                .carousel-item {
+                    .carousel-caption {
+                        h5 {
+                            font-size: $size-h5-tablet;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* quienes somos */
+    .quienessomos {
+        .quienessomos__titulo {
+            font-size: $size-h2-tablet;
+        }
+        .quienessomos-contenido {
+            display: flex;
+            flex-direction: column;
+            .quienessomos__imagen {
+                width: 50%;
+            }
+            .quienessomos__parrafo {
+                margin-top: 15px;
+                width: 40%;
+                p {
+                    font-size: $size-p-tablet;
+                    }
+                }
+        }
+    }
+    .valores {
+        .valores__titulo {
+            font-size: $size-h3-tablet;
+        }
+        .valores-div {
+            .valores {
+                font-size: $size-p-medio;
+                width: 40%;
+            }
+        }
+    }
+    .contacto {
+        font-size: $size-a-tablet;
+    }
+    /* productos */
+    .nuestrosproductos {
+        font-size: $size-h2-tablet;
+    }
+    .row {
+        .col {
+            width: 66%;
+            .card {
+                .card-body {
+                    .card-title {
+                        font-size: $size-h6-tablet;
+                    }
+                }
+            }
+        }
+    }
+    /* envios */
+    .envios__titulo {
+        margin: 15px;
+        font-size: $size-h2-tablet;
+    }
+    .envios {
+        .envios__zona {
+            margin: 10px;
+            font-size: $size-h3-tablet;
+        }
+        .envios__informacion {
+            .envios__precio {
+                margin: 5px;
+                font-size: $size-p-tablet;
+            }
+            .envios__iframe {
+                height: 350px;
+            }
+        }
+    }
+    .ubicacion__titulo {
+        font-size: $size-h3-tablet;
+    }
+    .ubicacion {
+        .ubicacion__direccion {
+            font-size: $size-p-tablet;
+        }
+        .ubicacion__iframe {
+        height: 350px;
+        }
+    }
+    /* contacto */
+    .contacto__titulo {
+        font-size: $size-h2-tablet;
+    }
+    form {
+        .formulario__legend {
+            font-size: $size-h5-tablet;
+        }
+        .formulario {
+            .formulario__label {
+                font-size: $size-h6-tablet;
+            }
+            .formulario__input {
+            font-size: $size-h6-tablet;
+            }
+            .formulario__boton {
+                font-size: $size-h6-tablet;
+            }
+        }
+    }
+    .ubicacion__titulo {
+        font-size: $size-h3-tablet;
+    }
+    .ubicacion {
+        .ubicacion__direccion {
+            font-size: $size-h6-tablet;
+        }
+        .ubicacion__iframe {
+        height: 350px;
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    header {
+        .encabezado {
+            .container-fluid {
+                .navbar-brand {
+                    p {
+                        font-size: $size-p-celular;
+                    }  
+                }
+            }
+        }
+        .menu {
+            .menu__div {
+                .menu__lista {
+                    ul {
+                        li {
+                            .menu__navegacion {
+                                font-size: $size-p-celular;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    /* footer */
+    .footer {
+        .footer__div {
+            .footer__redes {
+                font-size: $size-a-celular;
+            }
+        }
+    }
+    
+    /* inicio */
+    .presentacion {
+        .presentacion__titulo {
+            font-size: $size-h1-celular;
+        }
+        .presentacion__contenido {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .contenido__imagen {
+                width: 50%;
+            }
+            .contenido__texto {
+                align-items: center;
+                text-align: justify;
+                width: 66%; 
+                margin: 5px 0 0 0;         
+                p {
+                    font-size: $size-h6-celular;
+                }
+            }
+        }
+    }
+    .carrusel {
+        width: 66%;
+        .carrusel__title {
+            font-size: $size-h3-celular;
+        }
+        #carouselExampleCaptions {
+            .carousel-inner {
+                .carousel-item {
+                    .carousel-caption {
+                        h5 {
+                            font-size: $size-h5-celular;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* quienes somos */
+    .quienessomos {
+        .quienessomos__titulo {
+            font-size: $size-h2-celular;
+        }
+        .quienessomos-contenido {
+            display: flex;
+            flex-direction: column;
+            .quienessomos__imagen {
+                width: 50%;
+            }
+            .quienessomos__parrafo {
+                margin-top: 15px;
+                width: 66%;
+                p {
+                    font-size: $size-p-celular;
+                }
+            }
+        }
+    }
+    .valores {
+        .valores__titulo {
+            font-size: $size-h3-celular;
+        }
+        .valores-div {
+            .valores {
+                font-size: $size-p-celular;
+                width: 40%;
+            }
+        }
+    }
+    .contacto {
+        font-size: $size-a-celular;
+    }
+    /* productos */
+    .nuestrosproductos {
+        font-size: $size-h2-celular;
+    }
+    .row {
+        .col {
+            width: 66%;
+            .card {
+                .card-body {
+                    .card-title {
+                        font-size: $size-h6-celular;
+                    }
+                }
+            }
+        }
+    }
+    /* envios */
+    .envios__titulo {
+        font-size: $size-h2-celular;
+        margin: 15px;
+    }
+    .envios {
+        .envios__zona {
+            margin: 10px;
+            font-size: $size-h3-celular;
+        }
+        .envios__informacion {
+            .envios__precio {
+                margin: 5px;
+                font-size: $size-p-celular;
+            }
+            .envios__iframe {
+                height: 300px;
+            }
+        }
+    }
+    /* contacto */
+    .contacto__titulo {
+        font-size: $size-h2-celular;
+    }
+    form {
+        .formulario__legend {
+            font-size: $size-h5-celular;
+        }
+        .formulario {
+            .formulario__label {
+                font-size: $size-h6-celular;
+            }
+            .formulario__input {
+            font-size: $size-h6-celular;
+            }
+            .formulario__boton {
+                font-size: $size-h6-celular;
+            }
+        }
+    }
+    .ubicacion__titulo {
+        font-size: $size-h3-celular;
+    }
+    .ubicacion {
+        .ubicacion__direccion {
+            font-size: $size-h6-celular;
+        }
+        .ubicacion__iframe {
+        height: 300px;
+        }
+    }
+}
