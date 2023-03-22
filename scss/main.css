@@ -10,7 +10,6 @@ body {
 
 /* encabezado */
 header {
-  position: -webkit-sticky;
   position: sticky;
   top: 0px;
   z-index: 2;
@@ -146,8 +145,7 @@ header .menu .menu__div .menu__lista ul li .menu__navegacion:hover {
 .quienessomos .quienessomos-contenido {
   margin: 15px 0;
   display: flex;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
   justify-content: space-around;
   align-items: center;
 }
