@@ -1,0 +1,148 @@
+@import "vars";
+@media (min-width: 481px) and (max-width: 768px) {
+    /* encabezado */
+    .menu {
+        .menu__navegacion {
+            font-size: $size-parrafos-tablet !important;
+        }
+    }   
+    /* footer */
+    .footer {
+        padding: 7px;
+        .footer__div {
+            .footer__redes {
+                font-size: 15px;
+            }
+        }
+    }
+    /* index */
+    .article__titulo {
+        font-size: 50px !important;
+    }
+    .article {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        display: block;
+        .article__imagen {
+            height: 400px;
+        }
+        div {
+            .article__texto {
+                font-size: $size-parrafos;
+                margin: 20px auto;
+            }
+        }
+    }
+    .section__title {
+        @include titulos-tablet;
+    }
+    .section {
+        width: 450px;
+        height: 450px;
+        .carousel-item {
+            height: 450px;
+            width: 450px;
+        }
+    }
+    .carousel-control-prev {
+        width: 20%;
+    }
+    .carousel-control-next {
+        width: 20%;
+    }
+    
+    /* quienes somos */
+    .quienessomos__titulo {
+        @include titulos-tablet;
+    }
+    .quienessomos {
+        display: block;
+        div {
+            .quienessomos__parrafo {
+                font-size: 20px;
+                margin: 20px auto;
+            }
+        }
+    }
+    .valores__titulo {
+        font-size: $size-titulos-celular;
+        margin: $margin-titulos-tablet;
+    }
+    .valores-div {
+        .valores {
+            font-size: $size-parrafos-tablet;
+        }
+    }
+    .contacto {
+        display: block;
+        margin: 20px 10px;
+        font-size: $size-parrafos-tablet;
+        text-align: center;
+    }
+    /* productos */
+    .nuestrosproductos {
+        @include titulos-tablet;
+    }
+    .card {
+        .card-title {
+            font-size: $size-parrafos-tablet !important;
+        }
+    }
+    /* envios */
+    .envios__titulo {
+        @include titulos-tablet;
+    }
+    .envios__zona {
+        font-size: $size-titulos-celular;
+    }
+    .envios {
+        .envios__precio {
+            font-size: $size-parrafos-tablet;
+            .envios__contacto {
+                font-size: $size-parrafos-tablet;
+            }
+        }
+        .envios__iframe {
+            border: solid 4px black;
+            margin: 20px auto;
+            width: 450px;
+            height: 450px;
+        }
+    }
+    /* contacto */
+    .contacto__titulo {
+        @include titulos-tablet
+    }
+    .formulario {
+        .formulario__legend {
+            font-size: $size-parrafos-tablet;
+        }
+        div {
+            .formulario__label {
+                font-size: $size-parrafos-tablet;
+            }
+            .formulario__input {
+                font-size: $size-parrafos-tablet;
+            }
+            .formulario__boton {
+                padding: 8px;
+                font-size: $size-parrafos-tablet;
+            }
+        }
+    }
+    .ubicacion__titulo {
+        margin: $margin-titulos-tablet;
+        font-size: $size-titulos-celular
+    }
+    .ubicacion {
+        .ubicacion__direccion {
+            font-size: $size-parrafos-tablet
+        }
+        .ubicacion__iframe {
+            border: solid 4px black;
+            margin: 20px auto;
+            width: 450px;
+            height: 450px;
+        }
+    }
+}
